@@ -8,8 +8,8 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-poppins); /* ✅ replaced geist-sans with poppins */
+  --font-mono: var(--font-geist-mono); /* keep mono if you want */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +22,50 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-poppins), sans-serif; /* ✅ use Poppins globally */
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+.animate-slideDown {
+  animation: slideDown 0.4s ease forwards;
+}
+
+.animate-slideUp {
+  animation: slideUp 0.4s ease forwards;
+}
+
+.product-item::after {
+  height: 80%;
+}
+.product-item::after {
+  content: "";
+  border-right: 1px solid #eaeaea;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  height: 70%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
