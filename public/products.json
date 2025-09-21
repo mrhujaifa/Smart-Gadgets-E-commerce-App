@@ -1,703 +1,127 @@
-[
-  {
-    "id": "PDT-1021",
-    "title": "iPhone 17 Pro Max",
-    "slug": "iphone-17-pro-max",
-    "category": "Smartphones",
-    "brand": "Apple",
-    "rating": 4.8,
-    "reviewsCount": 5,
-    "availability": { "inStock": true, "stockCount": 35 },
-    "pricing": {
-      "originalPrice": 1499.0,
-      "discountedPrice": 1399.0,
-      "currency": "USD",
-      "discountPercent": 7
-    },
-    "variants": [
-      {
-        "color": "Graphite",
-        "sku": "IP17PM-GR",
-        "images": [
-          "/products/smartphones/iphone17-graphite-1.png",
-          "/products/smartphones/iphone17-graphite-2.png"
-        ]
-      },
-      {
-        "color": "Silver",
-        "sku": "IP17PM-SL",
-        "images": [
-          "/products/smartphones/iphone17-silver-1.png",
-          "/products/smartphones/iphone17-silver-2.png"
-        ]
-      },
-      {
-        "color": "Gold",
-        "sku": "IP17PM-GD",
-        "images": [
-          "/products/smartphones/iphone17-gold-1.png",
-          "/products/smartphones/iphone17-gold-2.png"
-        ]
-      }
-    ],
-    "description": {
-      "short": "The latest iPhone 17 Pro Max with advanced camera system and A17 Bionic chip.",
-      "long": [
-        {
-          "title": "Pro Camera System",
-          "content": "Triple-lens setup with LiDAR scanner for enhanced photography and AR experiences."
-        },
-        {
-          "title": "A17 Bionic Chip",
-          "content": "Fastest chip ever in a smartphone, optimized for gaming and multitasking."
-        },
-        {
-          "title": "Super Retina XDR Display",
-          "content": "6.7-inch OLED display with high contrast and HDR support."
-        },
-        {
-          "title": "Long Battery Life",
-          "content": "All-day battery with fast charging and MagSafe support."
-        }
-      ]
-    },
-    "specifications": {
-      "general": {
-        "weight": "238 g",
-        "dimensions": "160.8 x 78.1 x 7.7 mm",
-        "size": "6.7 Inches",
-        "colorOptions": ["Graphite", "Silver", "Gold"],
-        "guarantee": "1 Year"
-      },
-      "technical": {
-        "brand": "Apple",
-        "model": "iPhone 17 Pro Max",
-        "processor": {
-          "brand": "Apple",
-          "type": "A17 Bionic",
-          "speed": "3.5 GHz"
-        },
-        "ram": "12 GB",
-        "storage": { "size": "512 GB", "type": "NVMe Flash Storage" },
-        "graphics": {
-          "coprocessor": "Apple GPU",
-          "cardDescription": "Integrated Graphics"
-        },
-        "display": { "screenSize": "6.7 Inches", "resolution": "2778 x 1284" },
-        "camera": { "rear": "48 MP + 12 MP + 12 MP", "front": "12 MP" },
-        "os": "iOS 19"
-      }
-    },
-    "reviews": [
-      {
-        "name": "Emma Williams",
-        "email": "emma.w@example.com",
-        "rating": 5,
-        "comment": "The best iPhone I have ever used!",
-        "date": "2025-09-12T09:00:00Z"
-      },
-      {
-        "name": "Liam Johnson",
-        "email": "liam.j@example.com",
-        "rating": 5,
-        "comment": "Camera and performance are outstanding.",
-        "date": "2025-09-13T11:30:00Z"
-      },
-      {
-        "name": "Olivia Brown",
-        "email": "olivia.b@example.com",
-        "rating": 4,
-        "comment": "Battery life could be better, but overall amazing.",
-        "date": "2025-09-14T14:15:00Z"
-      }
-    ],
-    "createdAt": "2025-09-17T16:00:00Z",
-    "updatedAt": "2025-09-17T16:30:00Z"
+{
+  "_id": "68cb82dfb339d1aa7cc30001",
+  "id": "PDT-1001",
+  "title": "Samsung Galaxy S25 Ultra",
+  "slug": "samsung-galaxy-s25-ultra",
+  "category": "Smartphones",
+  "brand": "Samsung",
+  "release": {
+    "deviceType": "Smartphone",
+    "releaseDate": "2025-02-03",
+    "status": "Available",
+    "madeBy": "South Korea"
   },
-  {
-    "id": "PDT-1001",
-    "title": "Ultra Wireless S50 Headphones S50 with Bluetooth",
-    "slug": "ultra-wireless-s50-headphones",
-    "category": "Headphones",
-    "brand": "ThemeForest",
-    "rating": 4.2,
-    "reviewsCount": 3,
-    "availability": { "inStock": true, "stockCount": 26 },
-    "pricing": {
-      "originalPrice": 2299.0,
-      "discountedPrice": 1999.0,
-      "currency": "USD",
-      "discountPercent": 13
-    },
-    "variants": [
-      {
-        "color": "White with Gold",
-        "sku": "FW511948218-WG",
-        "images": [
-          "/products/headphones/s50-gold-1.png",
-          "/products/headphones/s50-gold-2.png"
-        ]
-      },
-      {
-        "color": "Black with Red",
-        "sku": "FW511948218-BR",
-        "images": [
-          "/products/headphones/s50-black-1.png",
-          "/products/headphones/s50-black-2.png"
-        ]
-      }
-    ],
-    "description": {
-      "short": "High-quality wireless headphones with Bluetooth and premium sound experience.",
-      "long": [
-        {
-          "title": "Perfectly Done",
-          "content": "Praesent ornare, ex a interdum consectetur, lectus diam sodales elit, vitae egestas est enim ornare nisl."
-        },
-        {
-          "title": "Wireless",
-          "content": "Integer posuere, libero et ullamcorper facilisis, enim eros tincidunt orci."
-        },
-        {
-          "title": "Fresh Design",
-          "content": "Integer bibendum aliquet ipsum, in ultrices enim sodales sed."
-        },
-        {
-          "title": "Fabulous Sound",
-          "content": "Cras rutrum, nibh a sodales accumsan, elit sapien ultrices sapien."
-        }
-      ]
-    },
-    "specifications": {
-      "general": {
-        "weight": "7.25 kg",
-        "dimensions": "90 x 60 x 90 cm",
-        "size": "One Size Fits All",
-        "colorOptions": ["Black with Red", "White with Gold"],
-        "guarantee": "5 Years"
-      },
-      "technical": {
-        "brand": "Apple",
-        "model": "MF841HN/A",
-        "processor": {
-          "brand": "Intel",
-          "type": "Core i5",
-          "speed": "2.9 GHz"
-        },
-        "ram": "8 GB",
-        "storage": { "size": "512 GB", "type": "Solid State Drive" },
-        "graphics": {
-          "coprocessor": "Intel Integrated Graphics",
-          "cardDescription": "Integrated Graphics Card"
-        },
-        "display": { "screenSize": "13 Inches", "resolution": "1280 x 720" },
-        "camera": { "rear": "20 MP Electro + 28 MP CMOS" },
-        "os": "Android 4.4 KitKat"
-      }
-    },
-    "reviews": [
-      {
-        "name": "John Doe",
-        "email": "john.doe@example.com",
-        "rating": 5,
-        "comment": "Amazing sound quality and battery life!",
-        "date": "2025-09-10T12:30:00Z"
-      },
-      {
-        "name": "Jane Smith",
-        "email": "jane.smith@example.com",
-        "rating": 4,
-        "comment": "Comfortable to wear, but a bit expensive.",
-        "date": "2025-09-11T09:15:00Z"
-      }
-    ],
-    "createdAt": "2025-09-17T10:00:00Z",
-    "updatedAt": "2025-09-17T15:30:00Z"
+  "rating": 4.9,
+  "reviewsCount": 120,
+  "availability": {
+    "inStock": true,
+    "stockCount": 120
   },
-  {
-    "id": "PDT-2001",
-    "title": "Sony Alpha A6400 Mirrorless Camera",
-    "slug": "sony-alpha-a6400-mirrorless-camera",
-    "category": "Cameras",
-    "brand": "Sony",
-    "rating": 4.7,
-    "reviewsCount": 4,
-    "availability": { "inStock": true, "stockCount": 20 },
-    "pricing": {
-      "originalPrice": 98000.0,
-      "discountedPrice": 95000.0,
-      "currency": "BDT",
-      "discountPercent": 3
-    },
-    "variants": [
-      {
-        "color": "Black",
-        "sku": "SONY-A6400-BK",
-        "images": [
-          "/products/cameras/a6400-black-1.png",
-          "/products/cameras/a6400-black-2.png"
-        ]
-      }
-    ],
-    "description": {
-      "short": "High-performance APS-C mirrorless camera with fast autofocus and 4K video recording.",
-      "long": [
-        {
-          "title": "APS-C Sensor",
-          "content": "24.2 MP Exmor CMOS sensor delivering stunning image quality."
-        },
-        {
-          "title": "4K Video",
-          "content": "Capture smooth and detailed 4K videos with full pixel readout."
-        },
-        {
-          "title": "Real-time Eye AF",
-          "content": "Accurate autofocus for humans and animals."
-        },
-        {
-          "title": "Compact & Lightweight",
-          "content": "Portable mirrorless camera perfect for travel and vlogging."
-        }
-      ]
-    },
-    "specifications": {
-      "general": {
-        "weight": "403 g",
-        "dimensions": "120 x 66.9 x 59.7 mm",
-        "size": "Compact Mirrorless",
-        "colorOptions": ["Black"],
-        "guarantee": "1 Year"
-      },
-      "technical": {
-        "brand": "Sony",
-        "model": "Alpha A6400",
-        "sensor": { "type": "APS-C", "megapixels": 24.2 },
-        "processor": { "brand": "Sony", "type": "BIONZ X" },
-        "ram": "N/A",
-        "storage": { "type": "SD Card", "capacity": "Depends on card" },
-        "graphics": { "coprocessor": "N/A", "cardDescription": "Integrated" },
-        "display": {
-          "screenSize": "3 Inches",
-          "resolution": "921k dots, Tiltable 180°"
-        },
-        "camera": { "rear": "24.2 MP", "front": "N/A" },
-        "video": "4K UHD 30p, Full HD 120p",
-        "os": "N/A"
-      }
-    },
-    "reviews": [
-      {
-        "name": "Rahim Ahmed",
-        "email": "rahim.a@example.com",
-        "rating": 5,
-        "comment": "Excellent autofocus and video quality!",
-        "date": "2025-09-15T10:00:00Z"
-      },
-      {
-        "name": "Sara Karim",
-        "email": "sara.k@example.com",
-        "rating": 4,
-        "comment": "Great for vlogging, but battery drains fast.",
-        "date": "2025-09-16T12:30:00Z"
-      },
-      {
-        "name": "Imran Hossain",
-        "email": "imran.h@example.com",
-        "rating": 5,
-        "comment": "Compact and lightweight, perfect for travel photography.",
-        "date": "2025-09-16T14:45:00Z"
-      }
-    ],
-    "createdAt": "2025-09-17T18:00:00Z",
-    "updatedAt": "2025-09-17T18:30:00Z"
+  "pricing": {
+    "originalPrice": 1499,
+    "discountedPrice": 1399,
+    "currency": "USD",
+    "discountPercent": 7
   },
-  {
-    "id": "PDT-3001",
-    "title": "Casio Edifice EFV-550",
-    "slug": "casio-edifice-efv-550",
-    "category": "Watches",
-    "brand": "Casio",
-    "rating": 4.5,
-    "reviewsCount": 3,
-    "availability": { "inStock": true, "stockCount": 50 },
-    "pricing": {
-      "originalPrice": 10000.0,
-      "discountedPrice": 9500.0,
-      "currency": "BDT",
-      "discountPercent": 5
-    },
-    "variants": [
-      {
-        "color": "Silver",
-        "sku": "CASIO-EFV550-SL",
-        "images": [
-          "/products/watches/edifice-silver-1.png",
-          "/products/watches/edifice-silver-2.png"
-        ]
-      },
-      {
-        "color": "Black",
-        "sku": "CASIO-EFV550-BK",
-        "images": [
-          "/products/watches/edifice-black-1.png",
-          "/products/watches/edifice-black-2.png"
-        ]
-      }
-    ],
-    "description": {
-      "short": "Elegant Casio Edifice chronograph watch with stainless steel design and water resistance.",
-      "long": [
-        {
-          "title": "Stainless Steel Build",
-          "content": "Durable stainless steel case and strap, perfect for daily wear."
-        },
-        {
-          "title": "Chronograph Function",
-          "content": "Stopwatch functionality for accurate time measurement."
-        },
-        {
-          "title": "Water Resistant",
-          "content": "Resistant up to 100 meters, safe for swimming and showering."
-        },
-        {
-          "title": "Long Battery Life",
-          "content": "Reliable quartz movement with extended battery longevity."
-        }
+  "variants": [
+    {
+      "color": "Titanium Silver Blue",
+      "sku": "SGS25U-TSB",
+      "images": [
+        "/products/mobiles/sgs25u-blue-1.png",
+        "/products/mobiles/sgs25u-blue-2.png"
       ]
     },
-    "specifications": {
-      "general": {
-        "weight": "150 g",
-        "dimensions": "48 x 42 x 12 mm",
-        "size": "Standard Men's Watch",
-        "colorOptions": ["Silver", "Black"],
-        "guarantee": "1 Year"
+    {
+      "color": "Titanium Black",
+      "sku": "SGS25U-TBK",
+      "images": [
+        "/products/mobiles/sgs25u-black-1.png",
+        "/products/mobiles/sgs25u-black-2.png"
+      ]
+    }
+  ],
+  "description": {
+    "short": "Flagship smartphone with 200MP camera and Snapdragon 8 Elite chipset.",
+    "long": [
+      {
+        "title": "Pro Camera",
+        "content": "200 MP quad-camera system with periscope zoom and AI video HDR."
       },
-      "technical": {
-        "brand": "Casio",
-        "model": "EFV-550",
-        "movement": "Quartz",
-        "caseMaterial": "Stainless Steel",
-        "strapMaterial": "Stainless Steel",
-        "waterResistance": "100 meters",
-        "displayType": "Analog",
-        "battery": "SR920SW"
+      {
+        "title": "Powerful Chipset",
+        "content": "Snapdragon 8 Elite with advanced AI acceleration."
+      },
+      {
+        "title": "Immersive Display",
+        "content": "6.9-inch AMOLED 2X QHD+ with 120Hz refresh rate and 2600 nits brightness."
       }
-    },
-    "reviews": [
-      {
-        "name": "Rakib Hasan",
-        "email": "rakib.h@example.com",
-        "rating": 5,
-        "comment": "Stylish and durable watch, love the chronograph feature.",
-        "date": "2025-09-12T11:00:00Z"
-      },
-      {
-        "name": "Fatema Akter",
-        "email": "fatema.a@example.com",
-        "rating": 4,
-        "comment": "Elegant design, fits perfectly for daily use.",
-        "date": "2025-09-13T14:30:00Z"
-      },
-      {
-        "name": "Arif Chowdhury",
-        "email": "arif.c@example.com",
-        "rating": 5,
-        "comment": "Value for money watch with excellent quality.",
-        "date": "2025-09-14T10:45:00Z"
-      }
-    ],
-    "createdAt": "2025-09-17T20:00:00Z",
-    "updatedAt": "2025-09-17T20:30:00Z"
+    ]
   },
-  {
-    "id": "PDT-4001",
-    "title": "Apple MacBook Air M2 (2023)",
-    "slug": "apple-macbook-air-m2-2023",
-    "category": "Laptops",
-    "brand": "Apple",
-    "rating": 4.8,
-    "reviewsCount": 4,
-    "availability": { "inStock": true, "stockCount": 15 },
-    "pricing": {
-      "originalPrice": 200000.0,
-      "discountedPrice": 195000.0,
-      "currency": "BDT",
-      "discountPercent": 2.5
+  "specifications": {
+    "general": {
+      "brand": "Samsung",
+      "model": "Galaxy S25 Ultra",
+      "dimensions": "162.8 x 77.6 x 8.2 mm",
+      "weight": "218 g",
+      "colors": ["Titanium Silver Blue", "Titanium Black"],
+      "guarantee": "1 Year",
+      "ipRating": "IP68"
     },
-    "variants": [
-      {
-        "color": "Silver",
-        "sku": "MBA-M2-SL",
-        "images": [
-          "/products/laptops/macbook-air-m2-silver-1.png",
-          "/products/laptops/macbook-air-m2-silver-2.png"
-        ]
+    "hardwareSoftware": {
+      "os": "Android 15",
+      "processor": {
+        "brand": "Qualcomm",
+        "type": "Snapdragon 8 Elite",
+        "speed": "Octa-core 4.47GHz"
       },
-      {
-        "color": "Space Gray",
-        "sku": "MBA-M2-SG",
-        "images": [
-          "/products/laptops/macbook-air-m2-gray-1.png",
-          "/products/laptops/macbook-air-m2-gray-2.png"
-        ]
-      }
-    ],
-    "description": {
-      "short": "Ultra-light MacBook Air with Apple M2 chip for powerful performance and long battery life.",
-      "long": [
-        {
-          "title": "Apple M2 Chip",
-          "content": "8-core CPU and 10-core GPU deliver lightning-fast performance for all tasks."
-        },
-        {
-          "title": "Liquid Retina Display",
-          "content": "13.6-inch display with 500 nits brightness and True Tone technology."
-        },
-        {
-          "title": "All-day Battery",
-          "content": "Up to 18 hours of battery life for uninterrupted work and entertainment."
-        },
-        {
-          "title": "Lightweight & Portable",
-          "content": "Weighs only 1.24 kg, perfect for travel and work on-the-go."
-        }
-      ]
-    },
-    "specifications": {
-      "general": {
-        "weight": "1.24 kg",
-        "dimensions": "304.1 x 212.4 x 11.3 mm",
-        "size": "13.6 Inches",
-        "colorOptions": ["Silver", "Space Gray"],
-        "guarantee": "1 Year"
+      "ram": "12 GB",
+      "storage": {
+        "size": "256 GB",
+        "type": "UFS 4.0"
       },
-      "technical": {
-        "brand": "Apple",
-        "model": "MacBook Air M2",
-        "processor": {
-          "brand": "Apple",
-          "type": "M2",
-          "speed": "8-core CPU / 10-core GPU"
-        },
-        "ram": "8 GB LPDDR5",
-        "storage": { "size": "256 GB SSD", "type": "NVMe Flash Storage" },
-        "graphics": {
-          "coprocessor": "Apple GPU",
-          "cardDescription": "Integrated 10-core GPU"
-        },
-        "display": { "screenSize": "13.6 Inches", "resolution": "2560 x 1664" },
-        "os": "macOS Ventura"
+      "graphics": {
+        "coprocessor": "Adreno 830",
+        "cardDescription": "Integrated GPU"
       }
     },
-    "reviews": [
-      {
-        "name": "Tanvir Hossain",
-        "email": "tanvir.h@example.com",
-        "rating": 5,
-        "comment": "Incredibly fast and light, perfect for work and travel.",
-        "date": "2025-09-14T10:00:00Z"
-      },
-      {
-        "name": "Nadia Akter",
-        "email": "nadia.a@example.com",
-        "rating": 5,
-        "comment": "Battery lasts all day and performance is amazing!",
-        "date": "2025-09-15T12:30:00Z"
-      },
-      {
-        "name": "Fahim Rahman",
-        "email": "fahim.r@example.com",
-        "rating": 4,
-        "comment": "Sleek design, but a bit pricey for storage upgrade.",
-        "date": "2025-09-16T09:45:00Z"
+    "display": {
+      "type": "Dynamic AMOLED 2X",
+      "size": "6.9 inches",
+      "resolution": "1440 x 3120",
+      "refreshRate": "120 Hz",
+      "brightness": "2600 nits",
+      "protection": "Gorilla Armor 2"
+    },
+    "camera": {
+      "rear": "200 MP + 50 MP + 50 MP + 10 MP",
+      "front": "12 MP",
+      "video": "8K@30fps, 4K@60fps"
+    },
+    "battery": {
+      "capacity": "5000 mAh",
+      "charging": {
+        "wired": "45W",
+        "wireless": "25W",
+        "reverseWireless": "5W"
       }
-    ],
-    "createdAt": "2025-09-17T22:00:00Z",
-    "updatedAt": "2025-09-17T22:30:00Z"
+    },
+    "connectivity": {
+      "wifi": "Wi-Fi 7",
+      "bluetooth": "v5.4",
+      "network": "2G/3G/4G/5G",
+      "ports": ["USB-C 3.2"]
+    }
   },
-  {
-    "id": "PDT-5001",
-    "title": "HP Color LaserJet Pro M452dn",
-    "slug": "hp-color-laserjet-pro-m452dn",
-    "category": "Printers",
-    "brand": "HP",
-    "rating": 4.4,
-    "reviewsCount": 3,
-    "availability": { "inStock": true, "stockCount": 12 },
-    "pricing": {
-      "originalPrice": 65000.0,
-      "discountedPrice": 62000.0,
-      "currency": "BDT",
-      "discountPercent": 4.6
-    },
-    "variants": [
-      {
-        "color": "White",
-        "sku": "HP-M452DN-WH",
-        "images": [
-          "/products/printers/hp-m452dn-1.png",
-          "/products/printers/hp-m452dn-2.png"
-        ]
-      }
-    ],
-    "description": {
-      "short": "Reliable and efficient color laser printer for office use with duplex printing.",
-      "long": [
-        {
-          "title": "Fast Printing",
-          "content": "Prints up to 28 pages per minute in color and black & white."
-        },
-        {
-          "title": "Professional Quality",
-          "content": "High-quality color printing with sharp text and graphics."
-        },
-        {
-          "title": "Duplex Printing",
-          "content": "Automatic double-sided printing saves paper and time."
-        },
-        {
-          "title": "Connectivity Options",
-          "content": "Supports Ethernet, USB, and mobile printing for convenience."
-        }
-      ]
-    },
-    "specifications": {
-      "general": {
-        "weight": "20.5 kg",
-        "dimensions": "420 x 380 x 275 mm",
-        "size": "Medium Office Printer",
-        "colorOptions": ["White"],
-        "guarantee": "1 Year"
-      },
-      "technical": {
-        "brand": "HP",
-        "model": "LaserJet Pro M452dn",
-        "printerType": "Color Laser",
-        "printSpeed": "Up to 28 ppm",
-        "printResolution": "Up to 600 x 600 dpi",
-        "paperCapacity": "250 sheets input, 100 sheets output",
-        "duplex": "Automatic Duplex Printing",
-        "connectivity": ["USB 2.0", "Ethernet", "Mobile Printing"],
-        "osCompatibility": ["Windows 10/11", "Mac OS X", "Linux"]
-      }
-    },
-    "reviews": [
-      {
-        "name": "Sabbir Rahman",
-        "email": "sabbir.r@example.com",
-        "rating": 5,
-        "comment": "Fast and reliable printer for office use.",
-        "date": "2025-09-12T09:30:00Z"
-      },
-      {
-        "name": "Meherun Nahar",
-        "email": "meherun.n@example.com",
-        "rating": 4,
-        "comment": "Print quality is excellent, setup is simple.",
-        "date": "2025-09-13T11:15:00Z"
-      },
-      {
-        "name": "Rafiq Islam",
-        "email": "rafiq.i@example.com",
-        "rating": 4,
-        "comment": "Good printer but a bit heavy for home use.",
-        "date": "2025-09-14T14:45:00Z"
-      }
-    ],
-    "createdAt": "2025-09-17T23:00:00Z",
-    "updatedAt": "2025-09-17T23:30:00Z"
-  },
-  {
-    "id": "PDT-5001",
-    "title": "HP Color LaserJet Pro M452dn",
-    "slug": "hp-color-laserjet-pro-m452dn",
-    "category": "Printers",
-    "brand": "HP",
-    "rating": 4.4,
-    "reviewsCount": 3,
-    "availability": { "inStock": true, "stockCount": 12 },
-    "pricing": {
-      "originalPrice": 65000.0,
-      "discountedPrice": 62000.0,
-      "currency": "BDT",
-      "discountPercent": 4.6
-    },
-    "variants": [
-      {
-        "color": "White",
-        "sku": "HP-M452DN-WH",
-        "images": [
-          "/products/printers/hp-m452dn-1.png",
-          "/products/printers/hp-m452dn-2.png"
-        ]
-      }
-    ],
-    "description": {
-      "short": "Reliable and efficient color laser printer for office use with duplex printing.",
-      "long": [
-        {
-          "title": "Fast Printing",
-          "content": "Prints up to 28 pages per minute in color and black & white."
-        },
-        {
-          "title": "Professional Quality",
-          "content": "High-quality color printing with sharp text and graphics."
-        },
-        {
-          "title": "Duplex Printing",
-          "content": "Automatic double-sided printing saves paper and time."
-        },
-        {
-          "title": "Connectivity Options",
-          "content": "Supports Ethernet, USB, and mobile printing for convenience."
-        }
-      ]
-    },
-    "specifications": {
-      "general": {
-        "weight": "20.5 kg",
-        "dimensions": "420 x 380 x 275 mm",
-        "size": "Medium Office Printer",
-        "colorOptions": ["White"],
-        "guarantee": "1 Year"
-      },
-      "technical": {
-        "brand": "HP",
-        "model": "LaserJet Pro M452dn",
-        "printerType": "Color Laser",
-        "printSpeed": "Up to 28 ppm",
-        "printResolution": "Up to 600 x 600 dpi",
-        "paperCapacity": "250 sheets input, 100 sheets output",
-        "duplex": "Automatic Duplex Printing",
-        "connectivity": ["USB 2.0", "Ethernet", "Mobile Printing"],
-        "osCompatibility": ["Windows 10/11", "Mac OS X", "Linux"]
-      }
-    },
-    "reviews": [
-      {
-        "name": "Sabbir Rahman",
-        "email": "sabbir.r@example.com",
-        "rating": 5,
-        "comment": "Fast and reliable printer for office use.",
-        "date": "2025-09-12T09:30:00Z"
-      },
-      {
-        "name": "Meherun Nahar",
-        "email": "meherun.n@example.com",
-        "rating": 4,
-        "comment": "Print quality is excellent, setup is simple.",
-        "date": "2025-09-13T11:15:00Z"
-      },
-      {
-        "name": "Rafiq Islam",
-        "email": "rafiq.i@example.com",
-        "rating": 4,
-        "comment": "Good printer but a bit heavy for home use.",
-        "date": "2025-09-14T14:45:00Z"
-      }
-    ],
-    "createdAt": "2025-09-17T23:00:00Z",
-    "updatedAt": "2025-09-17T23:30:00Z"
-  }
-]
+  "reviews": [
+    {
+      "name": "John Doe",
+      "email": "john@example.com",
+      "rating": 5,
+      "comment": "The best phone I ever bought!",
+      "date": "2025-09-01T12:00:00Z"
+    }
+  ],
+  "createdAt": "2025-09-21T10:00:00Z",
+  "updatedAt": "2025-09-21T10:10:00Z"
+}

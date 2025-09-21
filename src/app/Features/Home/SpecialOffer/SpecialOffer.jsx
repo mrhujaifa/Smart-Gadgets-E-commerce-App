@@ -1,8 +1,8 @@
 // components/SpecialOfferCard.js
 export default function SpecialOfferCard() {
   return (
-    <div className="border-2 border-[#fed700] rounded-xl p-4 w-full  max-w-sm bg-white shadow-lg">
-      <div className="text-left space-y-2">
+    <div className="border-2 border-[#fed700] rounded-xl p-4 w-lg h-full bg-white shadow-lg">
+      <div className="">
         <div className="flex items-center justify-between">
           {/* Title */}
           <span className="text-lg font-semibold text-gray-800">
@@ -20,17 +20,18 @@ export default function SpecialOfferCard() {
           <img
             src="/images/game.png"
             alt="Game Console Controller"
-            className="mx-auto w- my-4"
+            className="mx-auto w-80 my-4"
           />
+          
         </div>
-        <h2 className="text-blue-700 font-semibold text-sm">
+        <h2 className="text-blue-700 w-50 mx-auto  font-semibold text-sm">
           Game Console Controller + USB 3.0 Cable
         </h2>
-        <div className="text-xl font-bold text-red-600">
-          <span className="line-through text-gray-400 text-sm mr-2">
+        <div className="flex items-center justify-center text-xl mt-5  text-red-600">
+          <span className="line-through text-gray-500 text-lg mr-2">
             $99.00
           </span>
-          $79.00
+          <span className="text-4xl">$79.00</span>
         </div>
 
         <div className="my-2">
@@ -42,10 +43,10 @@ export default function SpecialOfferCard() {
           </div>
         </div>
 
-        <p className="text-sm text-gray-600 mt-4">Hurry Up! Offer ends in:</p>
+        <p className="text-sm text-gray-600 mt-4 text-center">Hurry Up! Offer ends in:</p>
         <div className="flex justify-between text-center mt-2">
           {["HOURS", "MINS", "SECS"].map((label) => (
-            <div key={label} className="bg-gray-100 p-2 rounded-md w-full mx-1">
+            <div key={label} className="bg-gray-100 p-1 rounded-md w-full mx-1">
               <div className="text-lg font-bold">00</div>
               <div className="text-xs text-gray-600">{label}</div>
             </div>

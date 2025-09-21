@@ -6,25 +6,14 @@ import {
   FaLinkedinIn,
   FaYoutube,
 } from "react-icons/fa";
-import { IoCallOutline } from "react-icons/io5";
-
-import { AiOutlineMail } from "react-icons/ai";
 
 export default function SocialNavbar() {
   return (
     <div className="w-full py-1  border-b border-gray-200">
       <div className="container mx-auto  flex justify-between items-center text-sm">
         {/* Left links */}
-        <div className="flex gap-1">
-          <div className="flex items-center gap-2 border-r border-r-gray-300 px-2">
-            <IoCallOutline size={17} />
-            <span>+8801608283433</span>
-          </div>
-
-          <div className="flex items-center gap-1">
-            <AiOutlineMail size={17}/>
-            <span>info@smartgadgetsbd.com</span>
-          </div>
+        <div className="text-gray-400 text-xs">
+          <p>Welcome to Worldwide Smart Gadgets Store</p>
         </div>
 
         {/* Right links */}

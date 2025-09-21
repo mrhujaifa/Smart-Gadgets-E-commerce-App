@@ -46,7 +46,7 @@ export default function ProductCard({ product }) {
           </p>
         </div>
         <button
-          className="bg-yellow-400 hover:bg-yellow-500 text-white w-10 h-10 flex items-center justify-center rounded-full transition"
+          className="bg-[#fed700] hover:bg-yellow-500 cursor-pointer text-white w-10 h-10 flex items-center justify-center rounded-full transition"
           title="Add to Cart"
         >
           <svg
