@@ -33,13 +33,15 @@ export default function ProductTabs() {
     return true;
   });
 
+  const nav = ["featured", "onsale", "toprated"]
+
   const displayedProducts = filteredProducts.slice(0, 6);
 
   return (
     <div className="container mx-auto">
       {/* Tabs Navigation */}
       <div className="flex space-x-6 mb-6 justify-center border-b border-gray-200">
-        {["featured", "onsale", "toprated"].map((tab) => (
+        {nav.map((tab) => (
           <button
             key={tab}
             className={`font-medium text-lg pb-2 transition-all ${

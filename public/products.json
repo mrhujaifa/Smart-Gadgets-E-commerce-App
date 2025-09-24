@@ -1,127 +1,230 @@
-{
-  "_id": "68cb82dfb339d1aa7cc30001",
-  "id": "PDT-1001",
-  "title": "Samsung Galaxy S25 Ultra",
-  "slug": "samsung-galaxy-s25-ultra",
-  "category": "Smartphones",
-  "brand": "Samsung",
-  "release": {
-    "deviceType": "Smartphone",
-    "releaseDate": "2025-02-03",
-    "status": "Available",
-    "madeBy": "South Korea"
-  },
-  "rating": 4.9,
-  "reviewsCount": 120,
-  "availability": {
-    "inStock": true,
-    "stockCount": 120
-  },
-  "pricing": {
-    "originalPrice": 1499,
-    "discountedPrice": 1399,
-    "currency": "USD",
-    "discountPercent": 7
-  },
-  "variants": [
-    {
-      "color": "Titanium Silver Blue",
-      "sku": "SGS25U-TSB",
-      "images": [
-        "/products/mobiles/sgs25u-blue-1.png",
-        "/products/mobiles/sgs25u-blue-2.png"
+[
+  {
+    "_id": "68cb82dfb339d1aa7cc10334",
+    "id": "PDT-1001",
+    "title": "Ultra Wireless S50 Headphones S50 with Bluetooth",
+    "slug": "ultra-wireless-s50-headphones",
+    "category": "Headphones",
+    "brand": "ThemeForest",
+    "rating": 4.2,
+    "reviewsCount": 3,
+    "availability": {
+      "inStock": true,
+      "stockCount": 26
+    },
+    "pricing": {
+      "originalPrice": 0,
+      "discountedPrice": 200,
+      "currency": "USD",
+      "discountPercent": 13
+    },
+    "variants": [
+      {
+        "color": "White with Gold",
+        "sku": "FW511948218-WG",
+        "images": [
+          "https://i.ibb.co/zhYdnY0D/headphone.png",
+          "/products/headphones/s50-gold-2.png"
+        ]
+      },
+      {
+        "color": "Black with Red",
+        "sku": "FW511948218-BR",
+        "images": [
+          "/products/headphones/s50-black-1.png",
+          "/products/headphones/s50-black-2.png"
+        ]
+      }
+    ],
+    "description": {
+      "short": "High-quality wireless headphones with Bluetooth and premium sound experience.",
+      "long": [
+        {
+          "title": "Perfectly Done",
+          "content": "Praesent ornare, ex a interdum consectetur, lectus diam sodales elit, vitae egestas est enim ornare nisl."
+        },
+        {
+          "title": "Wireless",
+          "content": "Integer posuere, libero et ullamcorper facilisis, enim eros tincidunt orci."
+        },
+        {
+          "title": "Fresh Design",
+          "content": "Integer bibendum aliquet ipsum, in ultrices enim sodales sed."
+        },
+        {
+          "title": "Fabulous Sound",
+          "content": "Cras rutrum, nibh a sodales accumsan, elit sapien ultrices sapien."
+        }
       ]
     },
-    {
-      "color": "Titanium Black",
-      "sku": "SGS25U-TBK",
-      "images": [
-        "/products/mobiles/sgs25u-black-1.png",
-        "/products/mobiles/sgs25u-black-2.png"
+    "specifications": {
+      "general": {
+        "weight": "7.25 kg",
+        "dimensions": "90 x 60 x 90 cm",
+        "size": "One Size Fits All",
+        "colorOptions": ["Black with Red", "White with Gold"],
+        "guarantee": "5 Years"
+      },
+      "technical": {
+        "brand": "Apple",
+        "model": "MF841HN/A",
+        "processor": {
+          "brand": "Intel",
+          "type": "Core i5",
+          "speed": "2.9 GHz"
+        },
+        "ram": "8 GB",
+        "storage": {
+          "size": "512 GB",
+          "type": "Solid State Drive"
+        },
+        "graphics": {
+          "coprocessor": "Intel Integrated Graphics",
+          "cardDescription": "Integrated Graphics Card"
+        },
+        "display": {
+          "screenSize": "13 Inches",
+          "resolution": "1280 x 720"
+        },
+        "camera": {
+          "rear": "20 MP Electro + 28 MP CMOS"
+        },
+        "os": "Android 4.4 KitKat"
+      }
+    },
+    "reviews": [
+      {
+        "name": "John Doe",
+        "email": "john.doe@example.com",
+        "rating": 5,
+        "comment": "Amazing sound quality and battery life!",
+        "date": "2025-09-10T12:30:00Z"
+      },
+      {
+        "name": "Jane Smith",
+        "email": "jane.smith@example.com",
+        "rating": 4,
+        "comment": "Comfortable to wear, but a bit expensive.",
+        "date": "2025-09-11T09:15:00Z"
+      }
+    ],
+    "createdAt": "2025-09-17T10:00:00Z",
+    "updatedAt": "2025-09-17T15:30:00Z"
+  },
+  {
+    "_id": "68cb82dfb339d1aa7cc10335",
+    "id": "PDT-2001",
+    "title": "Sony Alpha A6400 Mirrorless Camera",
+    "slug": "sony-alpha-a6400-mirrorless-camera",
+    "category": "Cameras",
+    "brand": "Sony",
+    "rating": 4.7,
+    "reviewsCount": 4,
+    "availability": {
+      "inStock": true,
+      "stockCount": 20
+    },
+    "pricing": {
+      "originalPrice": 0,
+      "discountedPrice": 1000,
+      "currency": "BDT",
+      "discountPercent": 3
+    },
+    "variants": [
+      {
+        "color": "Black",
+        "sku": "SONY-A6400-BK",
+        "images": [
+          "https://i.ibb.co/7qvY01N/alpha-a6400.png",
+          "/products/cameras/a6400-black-2.png"
+        ]
+      }
+    ],
+    "description": {
+      "short": "High-performance APS-C mirrorless camera with fast autofocus and 4K video recording.",
+      "long": [
+        {
+          "title": "APS-C Sensor",
+          "content": "24.2 MP Exmor CMOS sensor delivering stunning image quality."
+        },
+        {
+          "title": "4K Video",
+          "content": "Capture smooth and detailed 4K videos with full pixel readout."
+        },
+        {
+          "title": "Real-time Eye AF",
+          "content": "Accurate autofocus for humans and animals."
+        },
+        {
+          "title": "Compact & Lightweight",
+          "content": "Portable mirrorless camera perfect for travel and vlogging."
+        }
       ]
-    }
-  ],
-  "description": {
-    "short": "Flagship smartphone with 200MP camera and Snapdragon 8 Elite chipset.",
-    "long": [
-      {
-        "title": "Pro Camera",
-        "content": "200 MP quad-camera system with periscope zoom and AI video HDR."
-      },
-      {
-        "title": "Powerful Chipset",
-        "content": "Snapdragon 8 Elite with advanced AI acceleration."
-      },
-      {
-        "title": "Immersive Display",
-        "content": "6.9-inch AMOLED 2X QHD+ with 120Hz refresh rate and 2600 nits brightness."
-      }
-    ]
-  },
-  "specifications": {
-    "general": {
-      "brand": "Samsung",
-      "model": "Galaxy S25 Ultra",
-      "dimensions": "162.8 x 77.6 x 8.2 mm",
-      "weight": "218 g",
-      "colors": ["Titanium Silver Blue", "Titanium Black"],
-      "guarantee": "1 Year",
-      "ipRating": "IP68"
     },
-    "hardwareSoftware": {
-      "os": "Android 15",
-      "processor": {
-        "brand": "Qualcomm",
-        "type": "Snapdragon 8 Elite",
-        "speed": "Octa-core 4.47GHz"
+    "specifications": {
+      "general": {
+        "weight": "403 g",
+        "dimensions": "120 x 66.9 x 59.7 mm",
+        "size": "Compact Mirrorless",
+        "colorOptions": ["Black"],
+        "guarantee": "1 Year"
       },
-      "ram": "12 GB",
-      "storage": {
-        "size": "256 GB",
-        "type": "UFS 4.0"
-      },
-      "graphics": {
-        "coprocessor": "Adreno 830",
-        "cardDescription": "Integrated GPU"
+      "technical": {
+        "brand": "Sony",
+        "model": "Alpha A6400",
+        "sensor": {
+          "type": "APS-C",
+          "megapixels": 24.2
+        },
+        "processor": {
+          "brand": "Sony",
+          "type": "BIONZ X"
+        },
+        "ram": "N/A",
+        "storage": {
+          "type": "SD Card",
+          "capacity": "Depends on card"
+        },
+        "graphics": {
+          "coprocessor": "N/A",
+          "cardDescription": "Integrated"
+        },
+        "display": {
+          "screenSize": "3 Inches",
+          "resolution": "921k dots, Tiltable 180°"
+        },
+        "camera": {
+          "rear": "24.2 MP",
+          "front": "N/A"
+        },
+        "video": "4K UHD 30p, Full HD 120p",
+        "os": "N/A"
       }
     },
-    "display": {
-      "type": "Dynamic AMOLED 2X",
-      "size": "6.9 inches",
-      "resolution": "1440 x 3120",
-      "refreshRate": "120 Hz",
-      "brightness": "2600 nits",
-      "protection": "Gorilla Armor 2"
-    },
-    "camera": {
-      "rear": "200 MP + 50 MP + 50 MP + 10 MP",
-      "front": "12 MP",
-      "video": "8K@30fps, 4K@60fps"
-    },
-    "battery": {
-      "capacity": "5000 mAh",
-      "charging": {
-        "wired": "45W",
-        "wireless": "25W",
-        "reverseWireless": "5W"
+    "reviews": [
+      {
+        "name": "Rahim Ahmed",
+        "email": "rahim.a@example.com",
+        "rating": 5,
+        "comment": "Excellent autofocus and video quality!",
+        "date": "2025-09-15T10:00:00Z"
+      },
+      {
+        "name": "Sara Karim",
+        "email": "sara.k@example.com",
+        "rating": 4,
+        "comment": "Great for vlogging, but battery drains fast.",
+        "date": "2025-09-16T12:30:00Z"
+      },
+      {
+        "name": "Imran Hossain",
+        "email": "imran.h@example.com",
+        "rating": 5,
+        "comment": "Compact and lightweight, perfect for travel photography.",
+        "date": "2025-09-16T14:45:00Z"
       }
-    },
-    "connectivity": {
-      "wifi": "Wi-Fi 7",
-      "bluetooth": "v5.4",
-      "network": "2G/3G/4G/5G",
-      "ports": ["USB-C 3.2"]
-    }
-  },
-  "reviews": [
-    {
-      "name": "John Doe",
-      "email": "john@example.com",
-      "rating": 5,
-      "comment": "The best phone I ever bought!",
-      "date": "2025-09-01T12:00:00Z"
-    }
-  ],
-  "createdAt": "2025-09-21T10:00:00Z",
-  "updatedAt": "2025-09-21T10:10:00Z"
-}
+    ],
+    "createdAt": "2025-09-17T18:00:00Z",
+    "updatedAt": "2025-09-17T18:30:00Z"
+  }
+]
