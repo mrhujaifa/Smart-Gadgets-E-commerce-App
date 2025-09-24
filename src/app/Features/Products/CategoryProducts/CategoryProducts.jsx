@@ -42,6 +42,7 @@ export default function CategoryProducts() {
   const handleViewMore = () => {
     setVisibleCount((prev) => prev + 8);
   };
+  
 
   return (
     <div className="container mx-auto mt-10 px-4">
