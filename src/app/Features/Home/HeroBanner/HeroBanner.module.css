@@ -16,7 +16,7 @@
 /* Small devices (430px - 767px) */
 @media (max-width: 767px) {
   :global(.swiper-pagination) {
-    margin-left: 0px;
+    margin-left: 23px;
   }
 }
 

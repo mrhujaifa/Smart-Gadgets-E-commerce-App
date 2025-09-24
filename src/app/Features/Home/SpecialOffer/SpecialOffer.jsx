@@ -1,7 +1,7 @@
 // components/SpecialOfferCard.js
 export default function SpecialOfferCard() {
   return (
-    <div className="border-2 border-[#fed700] rounded-xl p-4 w-lg h-full bg-white shadow-lg">
+    <div className="border-2 border-[#fed700] rounded-xl m p-4 w-full lg:w-lg h-full bg-white shadow-lg">
       <div className="">
         <div className="flex items-center justify-between">
           {/* Title */}

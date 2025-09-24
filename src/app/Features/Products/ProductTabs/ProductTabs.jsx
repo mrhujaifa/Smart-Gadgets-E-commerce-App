@@ -67,10 +67,10 @@ export default function ProductTabs() {
           <span className="ml-2 text-gray-500 animate-pulse">Loading...</span>
         </div>
       ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4">
           {displayedProducts.length > 0 ? (
             displayedProducts.map((product) => (
-              <ProductCard key={product.id || product._id} product={product} />
+              <ProductCard key={product._id} product={product} />
             ))
           ) : (
             <p className="text-gray-500 col-span-full text-center">No products available.</p>

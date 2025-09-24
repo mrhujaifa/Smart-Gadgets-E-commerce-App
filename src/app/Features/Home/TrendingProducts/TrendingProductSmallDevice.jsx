@@ -15,7 +15,7 @@ function chunkArray(array, size) {
   return result;
 }
 
-export default function TrendingProducts() {
+export default function TrendingProductSmallDevice() {
   const [products, setProducts] = useState([]);
   useEffect(() => {
     async function fetchProducts() {
@@ -28,14 +28,14 @@ export default function TrendingProducts() {
   }, []);
 
   // সর্বোচ্চ ২১টি প্রোডাক্ট, ৭টি করে ভাগ, ৩টি স্লাইড
-  const productChunks = chunkArray(products.slice(0, 21), 7);
+  const productChunks = chunkArray(products.slice(0, 16), 2);
 
   return (
     <div>
       <div className="container mx-auto w-full my-20 ">
-        <div className="w-full border-b border-gray-200 relative">
+        <div className="w-full px-2 border-b border-gray-200 relative">
           <p className="text-xl font-semibold inline-block relative pb-4">
-            Laptops & Computers
+            Trending Products
             <span className="absolute left-0 bottom-0 w-55 h-[2px] bg-yellow-400"></span>
           </p>
         </div>
@@ -48,7 +48,7 @@ export default function TrendingProducts() {
             loop={true}
             className=" "
           >
-            {productChunks.slice(0, 3).map((chunk, idx) => (
+            {productChunks.slice(0, 8).map((chunk, idx) => (
               <SwiperSlide key={idx}>
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7">
                   {chunk.map((product) => (
@@ -61,7 +61,7 @@ export default function TrendingProducts() {
               </SwiperSlide>
             ))}
           </Swiper>
-          <div className="mx-170">
+          <div className="mx-27 mt">
             <div className="my-swiper-pagination" />
           </div>
         </div>

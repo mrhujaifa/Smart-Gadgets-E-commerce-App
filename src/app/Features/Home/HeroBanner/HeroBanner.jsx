@@ -64,7 +64,7 @@ export default function HeroBanner() {
         >
           {slides.map((slide) => (
             <SwiperSlide key={slide.id}>
-              <div className="flex items-center justify-around mx-5 h-90 lg:h-100 lg:mx-40 gap-3 lg:pl-40">
+              <div className="flex items-center justify-around mx-5 h-98 lg:h-100 lg:mx-40 gap-3 lg:pl-40">
                 {/* Left Content */}
                 <div>
                   <h1 className="text-[#2f3a47] font-[200] lg:w-[400px] text-[40px] lg:text-[60px] leading-[1] tracking-tight">
@@ -77,7 +77,7 @@ export default function HeroBanner() {
                     <p className="font-semibold lg:text-3xl">$</p>
                     <p className="text-4xl lg:text-6xl font-semibold">{slide.price}</p>
                   </div>
-                  <button className="px-10 py-3 lg:px-16 lg:py-2.5 mt-4 bg-[#fed700] text-black rounded-lg hover:bg-yellow-500 transition">
+                  <button className="px-5 py-3 lg:px-16 lg:py-2.5 mt-4 bg-[#fed700] text-black rounded-lg hover:bg-yellow-500 transition">
                     {slide.btnText}
                   </button>
                 </div>

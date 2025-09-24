@@ -1,6 +1,6 @@
 "use client";
 
-import CategoryNavbar from "@/app/Components/Products/Navigation/CategoryNavbar/CategoryNavbar";
+import CategoryNavbar from "@/app/Components/Navbar/CategoryNavbar/CategoryNavbar";
 import ProductCard from "@/app/Components/Products/CategoryProductCard/CategoryProductCard";
 import { getAllProducts } from "@/app/Services/ProductService/productService";
 import { useEffect, useState } from "react";
@@ -63,7 +63,7 @@ export default function CategoryProducts() {
           <p className="text-gray-500">No products available.</p>
         ) : (
           <>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
               {displayedProducts.map((product) => (
                 <ProductCard key={product._id || product.id} product={product} />
               ))}
