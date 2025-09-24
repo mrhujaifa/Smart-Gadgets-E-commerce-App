@@ -25,7 +25,7 @@ export default function CategoryNavbar() {
 
   return (
     <nav className="w-full shadow-sm relative">
-      <div className="container mx-auto flex items-center justify-between">
+      <div className="container mx-auto hidden md:hidden lg:flex items-center justify-between">
         {/* Left Section */}
         <div className="flex items-center gap-5">
           {/* All Departments Button */}

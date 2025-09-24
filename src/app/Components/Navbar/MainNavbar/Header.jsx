@@ -1,30 +1,55 @@
 // components/Navbar.jsx
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import { FaBars, FaTimes, FaSearch } from "react-icons/fa";
 import Image from "next/image";
+import { AiOutlineUser } from "react-icons/ai";
+import { IoIosSearch } from "react-icons/io";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isSearchVisible, setIsSearchVisible] = useState(false);
+  const searchRef = useRef(null);
+
+  // Click outside handler
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (searchRef.current && !searchRef.current.contains(event.target)) {
+        setIsSearchVisible(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
+  const toggleSearch = () => {
+    setIsSearchVisible(!isSearchVisible);
+  };
 
   return (
     <>
       {/* Navbar */}
-      <div className="w-full">
-        <div className="container mx-auto py-6 flex items-center justify-between">
+      <div className="container mx-auto w-full">
+        <div className="py-6 lg:py-6 flex items-center mx-4 lg:mx-0 justify-between">
           {/* Left - Logo + Menu Icon */}
           <div className="flex items-center gap-4">
             {/* Mobile Menu Icon */}
             <button
               onClick={() => setIsOpen(true)}
-              className="lg:hidden text-2xl"
+              className="lg:hidden text-3xl"
             >
               <FaBars />
             </button>
             {/* Logo */}
-            <Link href="/" className="flex items-center text-xl font-bold">
+            <Link
+              href="/"
+              className="flex items-center mx-2 h-1 lg:mx-0 text-xl font-bold"
+            >
               <Image
                 src="/logos/smart-gadgets.png"
                 height={120}
@@ -91,53 +116,50 @@ export default function Header() {
           </div>
 
           {/* Right - Icons */}
-          <div className="flex items-center gap-7 text-gray-700">
-            <Link href="/login" className="hidden md:block font-medium">
-              <div className="flex gap-1">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="size-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
-                  />
-                </svg>
-                <span className="pt-0.5">Sign In</span>
+          <div className="flex items-center gap-4 lg:gap-7 text-gray-700">
+            {/* sign icone */}
+            <Link href="/login" className="font-medium">
+              <div className="flex items-center gap-2">
+                <AiOutlineUser className="w-7 h-7 lg:w-6 lg:h-6" />
+                <span className="pt-0.5 hidden lg:block">Sign In</span>
               </div>
             </Link>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="size-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0"
-              />
-            </svg>
 
-            <Link href="/wishlist" className="relative">
+            <Link href={"/"} className="hidden lg:block">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
-                stroke-width="1.5"
+                strokeWidth="1.5"
                 stroke="currentColor"
-                class="size-6"
+                className="size-6"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0"
+                />
+              </svg>
+            </Link>
+
+            {/* search icone */}
+            <button onClick={toggleSearch} className="lg:hidden">
+              <IoIosSearch size={30} />
+            </button>
+
+            {/* wishlist icone */}
+            <Link href="/wishlist" className="hidden lg:block relative">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="1.5"
+                stroke="currentColor"
+                className="size-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
                 />
               </svg>
@@ -150,7 +172,7 @@ export default function Header() {
                 viewBox="0 0 24 24"
                 strokeWidth="1.5"
                 stroke="currentColor"
-                className="size-6"
+                className="w-7 h-7 lg:w-6 lg:h-6"
               >
                 <path
                   strokeLinecap="round"
@@ -173,10 +195,29 @@ export default function Header() {
               </span>
             </Link>
 
-            <span className="font-bold">$203.00</span>
+            <span className="font-bold hidden lg:block">$203.00</span>
           </div>
         </div>
       </div>
+
+      {/* Mobile Search Input*/}
+      {isSearchVisible && (
+        <div ref={searchRef} className="lg:hidden bg-white border-b border-gray-200 p-4 shadow-md">
+          <div className="container mx-auto">
+            <div className="flex items-center rounded-full border-2 border-[#fed700] overflow-hidden">
+              <input
+                type="text"
+                placeholder="Search for Products..."
+                className="flex-1 py-2 px-4 focus:outline-none text-sm"
+                autoFocus
+              />
+              <button className="bg-[#fed700] px-4 py-2 flex items-center justify-center hover:bg-yellow-400 transition-colors">
+                <FaSearch className="w-4 h-4" />
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Sidebar (Mobile) */}
       <div
