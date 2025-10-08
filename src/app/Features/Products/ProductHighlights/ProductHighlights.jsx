@@ -1,12 +1,12 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { getAllProducts } from "@/app/Services/ProductService/productService";
+import { getAllProducts } from "@/app/Services/ProductsService/productService";
 import ProductCard from "../../../Components/FeaturedProductsTabs/ProductCard/ProductCard";
 
-export default function ProductTabs() {
+export default function ProductHighlights() {
   const [products, setProducts] = useState([]);
   const [activeTab, setActiveTab] = useState("featured");
-  const [loading, setLoading] = useState(true); // Add loading state
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     async function fetchProducts() {
@@ -16,7 +16,7 @@ export default function ProductTabs() {
       } catch (err) {
         console.error(err);
       } finally {
-        setLoading(false); // Set loading to false after fetch
+        setLoading(false);
       }
     }
     fetchProducts();
@@ -26,16 +26,26 @@ export default function ProductTabs() {
     if (activeTab === "featured") {
       const sevenDaysAgo = new Date();
       sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
-      return new Date(product.createdAt) >= sevenDaysAgo;
+
+      // Ensure createdAt is a valid date
+      const createdDate = new Date(product.createdAt);
+      if (!isNaN(createdDate)) {
+        return createdDate >= sevenDaysAgo;
+      }
+      return false;
     }
-    if (activeTab === "onsale") return product.pricing.discountPercent > 0;
+    if (activeTab === "onsale") return product.pricing?.discountPercent > 0;
     if (activeTab === "toprated") return product.rating >= 4.5;
     return true;
   });
 
-  const nav = ["featured", "onsale", "toprated"]
+  // If featured tab has no products in last 7 days, fallback to first 6 products
+  const displayedProducts =
+    activeTab === "featured" && filteredProducts.length === 0
+      ? products.slice(0, 6)
+      : filteredProducts.slice(0, 6);
 
-  const displayedProducts = filteredProducts.slice(0, 6);
+  const nav = ["featured", "onsale", "toprated"];
 
   return (
     <div className="container mx-auto">
@@ -67,13 +77,15 @@ export default function ProductTabs() {
           <span className="ml-2 text-gray-500 animate-pulse">Loading...</span>
         </div>
       ) : (
-        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {displayedProducts.length > 0 ? (
             displayedProducts.map((product) => (
               <ProductCard key={product._id} product={product} />
             ))
           ) : (
-            <p className="text-gray-500 col-span-full text-center">No products available.</p>
+            <p className="text-gray-500 col-span-full text-center">
+              No products available.
+            </p>
           )}
         </div>
       )}

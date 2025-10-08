@@ -2,7 +2,7 @@
 
 import CategoryNavbar from "@/app/Components/Navbar/CategoryNavbar/CategoryNavbar";
 import ProductCard from "@/app/Components/Products/CategoryProductCard/CategoryProductCard";
-import { getAllProducts } from "@/app/Services/ProductService/productService";
+import { getAllProducts } from "@/app/Services/ProductsService/productService";
 import { useEffect, useState } from "react";
 
 export default function CategoryProducts() {
@@ -32,7 +32,8 @@ export default function CategoryProducts() {
 
   // Filter products for the active category
   const filteredProducts = products.filter(
-    (p) => p.category && p.category.toLowerCase() === activeCategory.toLowerCase()
+    (p) =>
+      p.category && p.category.toLowerCase() === activeCategory.toLowerCase()
   );
 
   // Products to show based on visibleCount
@@ -42,7 +43,6 @@ export default function CategoryProducts() {
   const handleViewMore = () => {
     setVisibleCount((prev) => prev + 8);
   };
-  
 
   return (
     <div className="container mx-auto mt-10 px-4">
@@ -64,9 +64,12 @@ export default function CategoryProducts() {
           <p className="text-gray-500">No products available.</p>
         ) : (
           <>
-            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 lg: gap-5">
               {displayedProducts.map((product) => (
-                <ProductCard key={product._id || product.id} product={product} />
+                <ProductCard
+                  key={product._id || product.id}
+                  product={product}
+                />
               ))}
             </div>
 

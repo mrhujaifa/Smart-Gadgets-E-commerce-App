@@ -5,7 +5,7 @@ import React from "react";
 import HeroBanner from "../HeroBanner/HeroBanner";
 import BestDeals from "../BestDeals/BestDeals";
 import SpecialOfferCard from "../SpecialOffer/SpecialOffer";
-import ProductTabs from "@/app/Features/Products/ProductTabs/ProductTabs";
+import ProductTabs from "@/app/Features/Products/ProductHighlights/ProductHighlights";
 import CategoryProducts from "../../Products/CategoryProducts/CategoryProducts";
 import MainFooter from "@/app/Components/Footer/MainFooter/MainFooter";
 import TrendingProducts from "../TrendingProducts/TrendingProductsLargeDevice";

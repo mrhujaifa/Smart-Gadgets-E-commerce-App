@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import React from "react";
 import { FiHeart, FiRepeat } from "react-icons/fi";
 
@@ -26,6 +27,12 @@ export default function CategoryProductCard({ product }) {
           className="max-h-full max-w-full object-contain"
         />
       </div>
+      <Link
+          href={`/products/${product._id}`}
+          className="text-blue-600 mt-2 inline-block"
+        >
+          View Details
+        </Link>
 
       {/* Price + Cart */}
       <div className="flex items-center justify-between mb-3">
@@ -74,6 +81,7 @@ export default function CategoryProductCard({ product }) {
         <button className="flex items-center gap-1 hover:underline">
           <FiHeart /> Add to Wishlist
         </button>
+        
       </div>
     </div>
   );

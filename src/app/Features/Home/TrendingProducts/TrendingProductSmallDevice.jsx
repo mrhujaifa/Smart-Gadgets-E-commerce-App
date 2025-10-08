@@ -4,7 +4,7 @@ import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import { useEffect, useState } from "react";
-import { getAllProducts } from "@/app/Services/ProductService/productService";
+import { getAllProducts } from "@/app/Services/ProductsService/productService";
 import CategoryProductCard from "@/app/Components/Products/TrendingProducts/TrendingProducts";
 
 function chunkArray(array, size) {

@@ -1,0 +1,77 @@
+Smart-Gadgets-app/
+│
+├── public/                      # Static assets
+│   ├── images/
+│   └── icons/
+│
+├── src/                         # Everything lives under src
+│   ├── app/                     # If using App Router (Next.js 13+)
+│   │   └── (routes like layout.tsx, page.tsx etc.)
+│   |   ├──api/	
+|	|  	    ├──products/
+|	|	            ├──route.js
+|	|	            ├──[id]/route.js
+│   ├── pages/
+│   |
+│   ├── components/              # Reusable UI components
+│   │   ├── ui/                  # Base atoms/molecules (buttons, inputs)
+|   |   ├── FeaturedProductsTabs
+|   |   ├── Footer               #All Footer system here
+|   |   ├── Navbar               #All Navbar System here
+│  	│   ├── products/            # Product cards, labels, ect
+|   | 	         ├── CategoryProductCard.jsx
+|	|	         ├── ProductionBanner.JSX
+|	|	         ├── TrendingProducts.jsx
+│   ├── features/                # Feature-based business modules
+│   │   ├── home/                # Homepage sections
+│   │   │   ├── HeroBanner.jsx
+│   │   │   ├── BestDeals.jsx
+│   │   │   ├── SpecialOffer.jsx
+│   │   │   ├── BestDeals.jsx
+│   │   │   ├── SpecialOffer.jsx
+│   │   │   ├── TrendingProducts.jsx
+│   │   │   └── Homepage/
+|   |   |            └──page.js  #All Home components here
+│   │   ├── products/            # Listing, filtering, details
+|   |   |         ├── CategoryProducts.jsx
+|   |   |         ├── ProductTabs.jsx
+│   |
+│   ├── services/                # API services or SDK wrappers
+│   │   ├── productService.js
+│
+│   ├── context/                 # React context (Auth, Cart, etc.)
+│
+│   ├── hooks/                   # Reusable hooks
+│
+│   ├── lib/                     # 3rd-party libs, utils
+│   │   ├── dbConnects.jsx
+│   |
+│   ├── config/                  # Site config, API URLs, SEO, etc.
+│   │   ├── siteConfig.js
+│   │   ├── apiRoutes.js
+│   │   └── seoConfig.js
+│
+│   ├── layouts/                 # Global layouts
+│   │   ├── MainLayout.js
+│
+│   ├── store/                   # Global state (Redux/Zustand)
+│
+│   ├── middleware.js            # Middleware (auth guards, redirects)
+│   ├── styles/                  # TailwindCSS & global styles
+│   │   ├── globals.css
+│   │   └── tailwind.config.js
+│
+│   ├── constants/               # Static enums/keys/routes
+│
+│   ├── types/                   # TypeScript types (optional)
+│
+│   ├── utils/                   # Generic utility functions
+│   |
+│   └── __tests__/               # Unit/integration tests (Jest/RTL)
+│       ├── components/
+│       └── features/
+│
+├── .env.local                   # Environment variables
+├── jsconfig.json                # Path aliases (for `@/`)
+├── package.json
+└── README.md
