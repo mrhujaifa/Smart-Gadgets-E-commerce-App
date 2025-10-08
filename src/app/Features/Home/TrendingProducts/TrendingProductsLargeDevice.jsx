@@ -63,7 +63,7 @@ export default function TrendingProductsLargeDevice() {
             >
               {productChunks.slice(0, 3).map((chunk, idx) => (
                 <SwiperSlide key={idx}>
-                  <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-4">
+                  <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-2">
                     {chunk.map((product) => (
                       <CategoryProductCard
                         key={product._id}

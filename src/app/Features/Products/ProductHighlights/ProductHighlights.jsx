@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { getAllProducts } from "@/app/Services/ProductsService/productService";
-import ProductCard from "../../../Components/FeaturedProductsTabs/ProductCard/ProductCard";
+import ProductCard from "../../../Components/Products/FeaturedProductsTabs/ProductCard/ProductCard";
 
 export default function ProductHighlights() {
   const [products, setProducts] = useState([]);

@@ -7,7 +7,7 @@ export default function ProductCard({ product }) {
   const firstImage = product.variants[0].images[0];
 
   return (
-    <Link href={`/products/${product._id}`}>
+    <Link href={`/shop/products/${product.slug}`}>
       <div className="relative w-full hover:shadow-lg transition flex flex-col justify-between p-4 group h-full">
         {/* Right side border (80% height) */}
         <div className="absolute top-[10%] right-0 h-[80%] w-[1px] bg-gray-200"></div>

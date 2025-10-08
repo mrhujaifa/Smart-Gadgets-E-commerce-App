@@ -33,16 +33,29 @@ Smart-Gadgets-app/
 │   │   │   └── Homepage/
 |   |   |            └──page.js  #All Home components here
 │   │   ├── products/            # Listing, filtering, details
-|   |   |         ├── CategoryProducts.jsx
-|   |   |         ├── ProductTabs.jsx
-│   |
+|   |   |   ├── CategoryProducts
+|   |   |   |   ├── CategoryProducts.jsx
+|   |   |   ├── ProductHighlights
+|   |   |       ├── ProductHighlights.jsx
+|   |   |   
+│   |   |
 │   ├── services/                # API services or SDK wrappers
 │   │   ├── productService.js
-│
+│   |
 │   ├── context/                 # React context (Auth, Cart, etc.)
-│
+│   |
+│   ├── shop/                # Reusable hooks
+│   |   ├── products/                # Reusable hooks
+│   |   |   ├── [id]                 # Reusable hooks
+│   |   |       ├── page.jsx        # Reusable hooks
+|   |   |   ├── Details
+|   |   |       ├── ProductDetailsLayout
+|   |   |       |   ├── ProductDetailsLayout.jsx
+|   |   |       ├── ProductDetailsPage
+|   |   |       |   ├── ProductDetailsPage.jsx
+│   |
 │   ├── hooks/                   # Reusable hooks
-│
+│   |
 │   ├── lib/                     # 3rd-party libs, utils
 │   │   ├── dbConnects.jsx
 │   |
@@ -52,10 +65,10 @@ Smart-Gadgets-app/
 │   │   └── seoConfig.js
 │
 │   ├── layouts/                 # Global layouts
-│   │   ├── MainLayout.js
-│
+│   │       ├── MainLayout.js
+│   |
 │   ├── store/                   # Global state (Redux/Zustand)
-│
+│   |
 │   ├── middleware.js            # Middleware (auth guards, redirects)
 │   ├── styles/                  # TailwindCSS & global styles
 │   │   ├── globals.css

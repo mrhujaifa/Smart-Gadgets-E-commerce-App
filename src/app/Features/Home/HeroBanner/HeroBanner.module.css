@@ -37,7 +37,8 @@
 }
 
 :global(.swiper-pagination-bullet-active) {
-  width: 50px;
+  width: 40px;
+  height: 10px;
   background-color: #facc15;
   border-radius: 9999px;
   opacity: 1;

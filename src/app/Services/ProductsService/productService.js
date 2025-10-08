@@ -15,9 +15,9 @@ export async function getAllProducts() {
   }
 }
 
-export async function getSingleProduct(id) {
+export async function getSingleProduct(slug) {
   const res = await fetch(
-    `${process.env.NEXT_PUBLIC_BASE_URL}/api/products/${id}`,
+    `${process.env.NEXT_PUBLIC_BASE_URL}/api/products/${slug}`,
     {
       cache: "no-store",
     }

@@ -2,7 +2,7 @@ import { getSingleProduct } from "@/app/Services/ProductsService/productService"
 import Image from "next/image";
 
 export default async function ProductDetailsPage({ params }) {
-  const product = await getSingleProduct(params.id);
+  const product = await getSingleProduct(params.slug);
 
   if (!product) return <div className="text-center mt-20 text-red-500">Product not found!</div>;
 

@@ -1,6 +1,6 @@
 "use client";
 
-import HomePage from "./Features/Home/HomePage/HomePage";
+import HomePage from "./Features/Home/HomeRoot/HomePage";
 
 export default function Home() {
   return (

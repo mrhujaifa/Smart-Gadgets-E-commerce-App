@@ -28,7 +28,7 @@ export default function CategoryProductCard({ product }) {
         />
       </div>
       <Link
-          href={`/products/${product._id}`}
+          href={`/shop/products/${product.slug}`}
           className="text-blue-600 mt-2 inline-block"
         >
           View Details
