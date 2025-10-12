@@ -4,7 +4,7 @@ import React from "react";
 import { FiHeart, FiRepeat } from "react-icons/fi";
 
 export default function ProductCard({ product }) {
-  const firstImage = product.variants[0].images[0];
+  const firstImage = product.variants[0].images[0] || './images/placeholderImg.png';
 
   return (
     <Link href={`/shop/products/${product.slug}`}>
@@ -16,7 +16,7 @@ export default function ProductCard({ product }) {
         <p className="text-gray-500 text-xs mb-1">{product.brand}</p>
 
         {/* Title */}
-        <h5 className="text-blue-600 font-semibold text-sm mb-2 line-clamp-2 cursor-pointer">
+        <h5 className="text-[#0062bd] font-semibold text-sm mb-2 line-clamp-2 cursor-pointer">
           {product.title}
         </h5>
 
@@ -35,7 +35,7 @@ export default function ProductCard({ product }) {
             {product.pricing.originalPrice >
               product.pricing.discountedPrice && (
               <p className="text-gray-400 text-sm line-through mb-1">
-                ${product.pricing.originalPrice.toFixed(2)}
+                BDT {product.pricing.originalPrice.toFixed(2)}
               </p>
             )}
             <p
@@ -45,11 +45,11 @@ export default function ProductCard({ product }) {
                   : "text-gray-500"
               }`}
             >
-              ${product.pricing.discountedPrice.toFixed(2)}
+              BDT {product.pricing.discountedPrice.toFixed(2)}
             </p>
           </div>
           <button
-            className="bg-[#fed700] hover:bg-yellow-500 cursor-pointer text-white w-10 h-10 flex items-center justify-center rounded-full transition"
+            className="bg-yellow-300 hover:bg-yellow-500 cursor-pointer text-white w-10 h-10 flex items-center justify-center rounded-full transition"
             title="Add to Cart"
           >
             <svg
@@ -75,7 +75,7 @@ export default function ProductCard({ product }) {
             <FiRepeat /> Compare
           </button>
           <button className="flex items-center gap-1 hover:underline">
-            <FiHeart /> Add to Wishlist
+            <FiHeart /> Wishlist
           </button>
         </div>
       </div>

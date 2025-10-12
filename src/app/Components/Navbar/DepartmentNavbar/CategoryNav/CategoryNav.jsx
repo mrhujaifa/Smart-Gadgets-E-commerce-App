@@ -31,7 +31,7 @@ export default function CategoryNavbar() {
           {/* All Departments Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="flex items-center gap-2 min-w-69 min-h-12 bg-[#fed700] cursor-pointer text-black font-medium px-4  rounded-t-lg"
+            className="flex items-center gap-2 min-w-69 min-h-12 bg-yellow-300 cursor-pointer text-black font-medium px-4  rounded-t-lg"
           >
             <TfiMenuAlt />
             <span className="font-semibold text-sm">All Departments</span>

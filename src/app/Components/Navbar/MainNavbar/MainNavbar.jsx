@@ -96,7 +96,7 @@ export default function Header() {
               </div>
 
               {/* Search Button */}
-              <button className="bg-[#fed700] px-4 py-2 flex items-center justify-center hover:bg-yellow-400 transition-colors">
+              <button className="bg-yellow-300 px-4 py-2 flex items-center justify-center hover:bg-yellow-400 transition-colors">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -190,7 +190,7 @@ export default function Header() {
               </svg>
 
               {/* Badge */}
-              <span className="absolute -top-2 -right-2 bg-[#fed700] text-gray-900 text-xs font-bold w-5 h-5 flex items-center justify-center rounded-full shadow-md">
+              <span className="absolute -top-2 -right-2 bg-yellow-300 text-gray-900 text-xs font-bold w-5 h-5 flex items-center justify-center rounded-full shadow-md">
                 3
               </span>
             </Link>
@@ -202,7 +202,10 @@ export default function Header() {
 
       {/* Mobile Search Input*/}
       {isSearchVisible && (
-        <div ref={searchRef} className="lg:hidden bg-white border-b border-gray-200 p-4 shadow-md">
+        <div
+          ref={searchRef}
+          className="lg:hidden bg-white border-b border-gray-200 p-4 shadow-md"
+        >
           <div className="container mx-auto">
             <div className="flex items-center rounded-full border-2 border-[#fed700] overflow-hidden">
               <input
@@ -211,7 +214,7 @@ export default function Header() {
                 className="flex-1 py-2 px-4 focus:outline-none text-sm"
                 autoFocus
               />
-              <button className="bg-[#fed700] px-4 py-2 flex items-center justify-center hover:bg-yellow-400 transition-colors">
+              <button className="bg-yellow-300 px-4 py-2 flex items-center justify-center hover:bg-yellow-400 transition-colors">
                 <FaSearch className="w-4 h-4" />
               </button>
             </div>

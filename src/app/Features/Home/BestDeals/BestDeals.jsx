@@ -55,7 +55,7 @@ export default function BestDeals() {
               </p>
               <button className="mt-3 text-sm font-semibold flex items-center gap-2 group">
                 Shop now
-                <span className="rounded-full bg-[#fed700] text-white border border-[#fed700] transition-transform group-hover:translate-x-1">
+                <span className="rounded-full bg-yellow-300 text-white border border-[#fed700] transition-transform group-hover:translate-x-1">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"

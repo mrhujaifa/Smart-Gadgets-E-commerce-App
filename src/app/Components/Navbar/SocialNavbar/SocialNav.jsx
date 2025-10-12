@@ -9,7 +9,7 @@ import {
 
 export default function SocialNavbar() {
   return (
-    <div className="w-full py-1  border-b border-gray-200">
+    <div className="w-full  border-b border-gray-200">
       <div className="container mx-auto hidden md:hidden  lg:flex justify-between items-center text-sm">
         {/* Left links */}
         <div className="text-gray-400 text-xs">

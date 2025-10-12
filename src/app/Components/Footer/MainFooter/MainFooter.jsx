@@ -90,8 +90,8 @@ export default function Footer() {
         <div className="bg-gray-100">
           <div className="container mx-auto py-4 px-4 flex flex-col md:flex-row justify-between items-center text-sm text-gray-600 gap-3">
             <p className="text-center md:text-left">
-              © <span className="font-bold text-gray-800">Smart Gadgets</span> - All
-              rights Reserved
+              © <span className="font-bold text-gray-800">Smart Gadgets</span> -
+              All rights Reserved
             </p>
 
             <div className="flex gap-3 flex-wrap justify-center md:justify-end">

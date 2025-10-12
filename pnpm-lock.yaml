@@ -23,9 +23,15 @@ importers:
       react-icons:
         specifier: ^5.5.0
         version: 5.5.0(react@19.1.0)
+      react-rating-stars-component:
+        specifier: ^2.2.0
+        version: 2.2.0
       react-routers:
         specifier: ^2.1.1
         version: 2.1.1(react-router-dom@5.3.4(react@19.1.0))(react-router@5.3.4(react@19.1.0))(react@19.1.0)
+      react-stars:
+        specifier: ^2.2.5
+        version: 2.2.5
       swiper:
         specifier: ^12.0.1
         version: 12.0.1
@@ -585,6 +591,9 @@ packages:
   react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
 
+  react-rating-stars-component@2.2.0:
+    resolution: {integrity: sha512-A3lgLxumfFQQicKQmxacZ91fq/zRaVWlCPnVodJmJV6obvod4/yCotetN9WuyBiUfnKsEFDBo/8B85ocwmL7ng==}
+
   react-router-dom@5.3.4:
     resolution: {integrity: sha512-m4EqFMHv/Ih4kpcBCONHbkT68KoAeHN4p3lAGoNryfHi0dMy0kCzEZakiKRsvg5wHZ/JLrLW8o8KomWiz/qbYQ==}
     peerDependencies:
@@ -601,6 +610,9 @@ packages:
       react: ^17.0.1
       react-router: ^5.2.0
       react-router-dom: ^5.2.0
+
+  react-stars@2.2.5:
+    resolution: {integrity: sha512-O//KS6Z9RZnUOU/r+3+wxCzNalVn/wEWIcbAQFRV3dw8WbV+ys/kgcpBPijqTiNpHGrcwZdtb/7wF/UVem20CQ==}
 
   react@19.1.0:
     resolution: {integrity: sha512-FS+XFBNvn3GTAWq26joslQgWNoFu08F4kl0J4CgdNKADkdSGXQyTCnKteIAJy96Br6YbpEU1LSzV5dYtjMkMDg==}
@@ -1118,6 +1130,8 @@ snapshots:
 
   react-is@16.13.1: {}
 
+  react-rating-stars-component@2.2.0: {}
+
   react-router-dom@5.3.4(react@19.1.0):
     dependencies:
       '@babel/runtime': 7.28.4
@@ -1148,6 +1162,8 @@ snapshots:
       react: 19.1.0
       react-router: 5.3.4(react@19.1.0)
       react-router-dom: 5.3.4(react@19.1.0)
+
+  react-stars@2.2.5: {}
 
   react@19.1.0: {}
 

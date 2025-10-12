@@ -1,5 +1,5 @@
 import CategoryNavbar from "@/app/Components/Navbar/DepartmentNavbar/CategoryNav/CategoryNav";
-import Header from "@/app/Components/Navbar/MainNavbar/Header";
+import Header from "@/app/Components/Navbar/MainNavbar/MainNavbar";
 import SocialNavbar from "@/app/Components/Navbar/SocialNavbar/SocialNav";
 import React from "react";
 import HeroBanner from "../HeroBanner/HeroBanner";
@@ -8,7 +8,6 @@ import SpecialOfferCard from "../SpecialOffer/SpecialOffer";
 import ProductTabs from "@/app/Features/Products/ProductHighlights/ProductHighlights";
 import CategoryProducts from "../../Products/CategoryProducts/CategoryProducts";
 import MainFooter from "@/app/Components/Footer/MainFooter/MainFooter";
-import TrendingProducts from "../TrendingProducts/TrendingProductsLargeDevice";
 import ProductionBanner from "@/app/Components/Products/ProductionBanner/ProductionBanner";
 import TrendingProductsRoot from "../TrendingProducts/TrendingProductsRoot";
 

@@ -78,7 +78,7 @@ export default function CategoryProducts() {
               <div className="flex justify-center mt-6">
                 <button
                   onClick={handleViewMore}
-                  className="px-6 py-2 bg-[#fed700] text-black rounded hover:bg-yellow-600 transition"
+                  className="px-6 py-2 bg-yellow-300 text-black rounded hover:bg-yellow-600 transition"
                 >
                   View More
                 </button>

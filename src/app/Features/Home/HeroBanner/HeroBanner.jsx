@@ -5,7 +5,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import Image from "next/image";
 import { Poppins } from "next/font/google";
-import './HeroBanner.module.css'
+import "./HeroBanner.module.css";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -57,7 +57,7 @@ export default function HeroBanner() {
       <div className="w-full">
         <Swiper
           modules={[Pagination, Autoplay]}
-          pagination={{ clickable: true,  }}
+          pagination={{ clickable: true }}
           autoplay={{ delay: 10000, disableOnInteraction: false }}
           loop={true}
           className="w-full container mx-auto"
@@ -69,15 +69,19 @@ export default function HeroBanner() {
                 <div>
                   <h1 className="text-[#2f3a47] font-[200] lg:w-[400px] text-[40px] lg:text-[60px] leading-[1] tracking-tight">
                     <span className="inline tracking-wide">THE NEW </span>
-                    <span className="inline text-[35px] lg:text-[54px]">STANDARD</span>
+                    <span className="inline text-[35px] lg:text-[54px]">
+                      STANDARD
+                    </span>
                   </h1>
                   <h2 className="text-black text-[15px] my-3">{slide.title}</h2>
                   <p className=" lg:text-sm text-gray-800">FROM</p>
                   <div className="flex text-black">
                     <p className="font-semibold lg:text-3xl">$</p>
-                    <p className="text-4xl lg:text-6xl font-semibold">{slide.price}</p>
+                    <p className="text-4xl lg:text-6xl font-semibold">
+                      {slide.price}
+                    </p>
                   </div>
-                  <button className="px-5 py-3 lg:px-16 lg:py-2.5 mt-4 bg-[#fed700] text-black rounded-lg hover:bg-yellow-500 transition">
+                  <button className="px-5 py-3 lg:px-16 lg:py-2.5 mt-4 bg-yellow-300 text-black rounded-lg hover:bg-yellow-500 transition">
                     {slide.btnText}
                   </button>
                 </div>
@@ -94,7 +98,6 @@ export default function HeroBanner() {
               </div>
             </SwiperSlide>
           ))}
-          
         </Swiper>
       </div>
     </div>

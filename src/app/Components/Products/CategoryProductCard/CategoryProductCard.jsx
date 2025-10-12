@@ -28,18 +28,18 @@ export default function CategoryProductCard({ product }) {
         />
       </div>
       <Link
-          href={`/shop/products/${product.slug}`}
-          className="text-blue-600 mt-2 inline-block"
-        >
-          View Details
-        </Link>
+        href={`/shop/products/${product.slug}`}
+        className="text-blue-600 mt-2 inline-block"
+      >
+        View Details
+      </Link>
 
       {/* Price + Cart */}
       <div className="flex items-center justify-between mb-3">
         <div>
           {product.pricing.originalPrice > product.pricing.discountedPrice && (
             <p className="text-gray-400 text-sm line-through mb-1">
-              ${product.pricing.originalPrice.toFixed(2)}
+              BDT {product.pricing.originalPrice.toFixed(2)}
             </p>
           )}
           <p
@@ -49,11 +49,11 @@ export default function CategoryProductCard({ product }) {
                 : "text-gray-500"
             }`}
           >
-            ${product.pricing.discountedPrice.toFixed(2)}
+            <span >BDT</span> {product.pricing.discountedPrice.toFixed(2)}
           </p>
         </div>
         <button
-          className="bg-[#fed700] hover:bg-yellow-500 cursor-pointer text-white w-10 h-10 flex items-center justify-center rounded-full transition"
+          className="bg-yellow-300 hover:bg-yellow-500 cursor-pointer text-white w-10 h-10 flex items-center justify-center rounded-full transition"
           title="Add to Cart"
         >
           <svg
@@ -81,7 +81,6 @@ export default function CategoryProductCard({ product }) {
         <button className="flex items-center gap-1 hover:underline">
           <FiHeart /> Add to Wishlist
         </button>
-        
       </div>
     </div>
   );

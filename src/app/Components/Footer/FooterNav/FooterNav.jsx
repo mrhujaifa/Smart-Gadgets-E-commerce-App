@@ -3,7 +3,7 @@ import React from "react";
 
 const FooterNav = () => {
   return (
-    <footer className="bg-[#fed700] py-3 px-4 md:px-8 text-black">
+    <footer className="bg-yellow-300 py-3 px-4 md:px-8 text-black">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
         {/* Left Side */}
         <div className="flex flex-col md:flex-row items-center text-center md:text-left gap-2 md:gap-4">
