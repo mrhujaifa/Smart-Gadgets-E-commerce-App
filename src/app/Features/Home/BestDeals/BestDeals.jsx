@@ -47,7 +47,7 @@ export default function BestDeals() {
 
             {/* Right - Text */}
             <div className="w-1/2 flex flex-col justify-center p-3">
-              <p className="text-lg font-light leading-tight">
+              <p className="text-[17px] lg:text-lg font-light leading-tight">
                 CATCH BIG <br />
                 <span className="font-semibold text-black">DEALS</span> ON THE{" "}
                 <br />

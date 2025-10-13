@@ -19,15 +19,19 @@ export default function HomePage() {
       <CategoryNavbar></CategoryNavbar>
       <HeroBanner></HeroBanner>
       <BestDeals></BestDeals>
-      <div className="flex flex-col gap-20 lg:flex-row lg:gap-9 lg:flex container mx-auto">
+      <div className="flex flex-col gap-20  lg:flex-row lg:gap-9 lg:flex container mx-auto">
         <SpecialOfferCard></SpecialOfferCard>
-        <ProductTabs></ProductTabs>
+        <div className="mx-5 lg:mx-0">
+          <ProductTabs></ProductTabs>
+        </div>
       </div>
       <div className="bg-[#f9f9f9]">
         <CategoryProducts></CategoryProducts>
       </div>
       <ProductionBanner></ProductionBanner>
-      <TrendingProductsRoot></TrendingProductsRoot>
+      <div className="mx-4 lg:mx-0">
+        <TrendingProductsRoot></TrendingProductsRoot>
+      </div>
       <MainFooter></MainFooter>
     </div>
   );
