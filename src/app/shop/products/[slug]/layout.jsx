@@ -1,4 +1,3 @@
-// app/shop/products/[slug]/layout.jsx
 import Link from "next/link";
 import SocialNavbar from "@/app/Components/Navbar/SocialNavbar/SocialNav";
 import SecondaryNavbar from "@/app/Components/Navbar/SecondaryItemNavbar/SecondaryItemNavbar";
@@ -10,7 +9,7 @@ import { RxHome } from "react-icons/rx";
 import FooterNav from "@/app/Components/Footer/FooterNav/FooterNav";
 import Footer from "@/app/Components/Footer/MainFooter/MainFooter";
 
-export default async function ProductDetailsLayout({ children, params }) {
+export default async function Layout({ children, params }) {
   const { slug } = params;
 
   let product = null;
@@ -29,11 +28,11 @@ export default async function ProductDetailsLayout({ children, params }) {
   return (
     <div className=" flex flex-col bg-white">
       {/* ---------- Top Navigation ---------- */}
-      <header>
+      {/* <header>
         <SocialNavbar />
         <SecondaryNavbar />
         <SecondaryMainNavbar />
-      </header>
+      </header> */}
 
       {/* ---------- Breadcrumb Section ---------- */}
       <nav className="container mx-auto flex items-center flex-wrap gap-2 text-sm mt-4 mb-6 text-gray-600 px-4">

@@ -2,7 +2,7 @@
 export default function SpecialOfferCard() {
   return (
     <div className="mx-4 lg:mx-0">
-      <div className="border-2  border-[#fed700] rounded-xl m p-4 w-full lg:w-lg h-full bg-white shadow-lg">
+      <div className="border-2  border-[#fed700] rounded-xl m p-4 w-full lg:w-md h-full bg-white shadow-lg">
         <div className="">
           <div className="flex items-center justify-between">
             {/* Title */}

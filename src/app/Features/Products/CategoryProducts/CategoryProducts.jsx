@@ -2,6 +2,7 @@
 
 import CategoryNavbar from "@/app/Components/Navbar/CategoryNavbar/CategoryNavbar";
 import ProductCard from "@/app/Components/Products/CategoryProductCard/CategoryProductCard";
+import NotProductsFound from "@/app/Error/NotProductsFound/NotProductsFound";
 import { getAllProducts } from "@/app/Services/ProductsService/productService";
 import { useEffect, useState } from "react";
 
@@ -61,7 +62,7 @@ export default function CategoryProducts() {
         </h2>
 
         {filteredProducts.length === 0 ? (
-          <p className="text-gray-500">No products available.</p>
+          <NotProductsFound></NotProductsFound>
         ) : (
           <>
             <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 lg: gap-5">

@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { getAllProducts } from "@/app/Services/ProductsService/productService";
 import ProductCard from "../../../Components/Products/FeaturedProductsTabs/ProductCard/ProductCard";
+import NotProductsFound from "@/app/Error/NotProductsFound/NotProductsFound";
 
 export default function ProductHighlights() {
   const [products, setProducts] = useState([]);
@@ -83,8 +84,8 @@ export default function ProductHighlights() {
               <ProductCard key={product._id} product={product} />
             ))
           ) : (
-            <p className="text-gray-500 col-span-full text-center">
-              No products available.
+            <p className=" col-span-full text-center">
+              <NotProductsFound></NotProductsFound>
             </p>
           )}
         </div>

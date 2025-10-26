@@ -1,7 +1,9 @@
-import React from 'react'
+import ShopLayout from "./ShopLayout";
 
-export default function page() {
+export default async function Page() {
   return (
-    <div>page</div>
-  )
+    <div>
+      <ShopLayout></ShopLayout>
+    </div>
+  );
 }

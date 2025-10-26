@@ -50,3 +50,7 @@ export async function addProductReview(slug, review) {
     return null;
   }
 }
+
+export async function getAllCategories(params) {
+  
+}

@@ -6,6 +6,7 @@ import "swiper/css/pagination";
 import { useEffect, useState } from "react";
 import { getAllProducts } from "@/app/Services/ProductsService/productService";
 import CategoryProductCard from "@/app/Components/Products/TrendingProducts/TrendingProducts";
+import NotProductsFound from "@/app/Error/NotProductsFound/NotProductsFound";
 
 // Helper: chunk array for Swiper slides
 function chunkArray(array, size) {
@@ -63,7 +64,7 @@ export default function RelatedProductSmallDevice({ category, excludeId }) {
           </div>
         ) : relatedProducts.length === 0 ? (
           <div className="text-center text-gray-500 py-10">
-            No related products found.
+            <NotProductsFound />
           </div>
         ) : (
           <>
@@ -77,7 +78,10 @@ export default function RelatedProductSmallDevice({ category, excludeId }) {
                 <SwiperSlide key={idx}>
                   <div className="grid grid-cols-2 gap-2">
                     {chunk.map((product) => (
-                      <CategoryProductCard key={product._id} product={product} />
+                      <CategoryProductCard
+                        key={product._id}
+                        product={product}
+                      />
                     ))}
                   </div>
                 </SwiperSlide>
