@@ -25,7 +25,7 @@ export default function SecondaryItemNavbar() {
             <Image
               src="/logos/smart-gadgets.png"
               height={120}
-              width={120}
+              width={110}
               alt="smart gadgets"
             ></Image>
           </Link>

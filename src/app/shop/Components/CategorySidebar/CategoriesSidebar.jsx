@@ -4,8 +4,10 @@ import ProductCard from "@/app/Components/Products/CategoryProductCard/CategoryP
 import NotProductsFound from "@/app/Error/NotProductsFound/NotProductsFound";
 import { getAllProducts } from "@/app/Services/ProductsService/productService";
 import { useEffect, useState } from "react";
+import { GoFilter } from "react-icons/go";
 import CategorySideNavbar from "../CategorySideNav/CategorySideNav";
 import FilterSidebar from "../FilterSidebar/FilterSidebar";
+import { motion, AnimatePresence } from "framer-motion";
 
 // ✅ Import MUI Skeleton
 import Skeleton from "@mui/material/Skeleton";
@@ -18,6 +20,8 @@ export default function CategoryProducts() {
   const [activeCategory, setActiveCategory] = useState("");
   const [visibleCount, setVisibleCount] = useState(10);
   const [loading, setLoading] = useState(true);
+  // ✅ For mobile sidebar toggle
+  const [isFilterOpen, setIsFilterOpen] = useState(false);
 
   // Data fetching
   useEffect(() => {
@@ -101,7 +105,7 @@ export default function CategoryProducts() {
 
   return (
     <div className="flex gap-3">
-      <div className="flex flex-col gap-10">
+      <div className="hidden lg:flex flex-col gap-10">
         <CategorySideNavbar
           categories={categories}
           activeCategory={activeCategory}
@@ -115,7 +119,119 @@ export default function CategoryProducts() {
       </div>
 
       <div className="container mx-auto px-4">
-        <ProductTopNav />
+        <nav className="hidden lg:block">
+          <ProductTopNav />
+        </nav>
+        {/* ✅ Mobile Filter Button */}
+        <div className="lg:hidden w-full bg-gray-100 py-3 rounded-md px-4">
+          <div className="flex justify-between">
+            <button
+              onClick={() => setIsFilterOpen(true)}
+              className=" flex items-center gap-2"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="size-5"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75"
+                />
+              </svg>{" "}
+              Filters
+            </button>
+
+            <div className="relative inline-block">
+              <select className="appearance-none  pr-2 text-sm text-gray-700 focus:outline-none focus:ring-2 focus:ring-yellow-400 ">
+                <div className="">
+                  <option>Default sorting</option>
+                  <option>Newest</option>
+                  <option>Oldest</option>
+                  <option>Price: Low to High</option>
+                  <option>Price: High to Low</option>
+                </div>
+              </select>
+
+              {/* Custom Icon */}
+              <div className="pointer-events-none absolute inset-y-0 right-2 flex items-center text-gray-500">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-4 h-4"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* ✅ Mobile Drawer (Sidebar) */}
+        <AnimatePresence>
+          {isFilterOpen && (
+            <>
+              {/* Overlay (fades in/out) */}
+              <motion.div
+                key="overlay"
+                onClick={() => setIsFilterOpen(false)}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 0.5 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.3 }}
+                className="fixed inset-0 bg-black z-40 "
+              ></motion.div>
+
+              {/* Drawer Content (slides in/out smoothly) */}
+              <motion.div
+                key="drawer"
+                initial={{ x: "-100%" }}
+                animate={{ x: 0 }}
+                exit={{ x: "-100%" }}
+                transition={{ duration: 0.3, ease: "easeInOut" }}
+                className="fixed top-0 left-0 bottom-0 w-4/5 max-w-sm  z-50 p-5 overflow-y-auto bg-white shadow-lg"
+              >
+                <div className="flex justify-between items-center mb-4 border-b pb-2">
+                  <h2 className="text-lg font-semibold">
+                    Filters & Categories
+                  </h2>
+                  <button
+                    onClick={() => setIsFilterOpen(false)}
+                    className="text-gray-600 text-2xl font-bold"
+                  >
+                    ×
+                  </button>
+                </div>
+
+                <CategorySideNavbar
+                  categories={categories}
+                  activeCategory={activeCategory}
+                  allProducts={products}
+                  onSelect={(category) => {
+                    setActiveCategory(category);
+                    setVisibleCount(10);
+                    setIsFilterOpen(false);
+                  }}
+                />
+
+                <div className="mt-10">
+                  <FilterSidebar />
+                </div>
+              </motion.div>
+            </>
+          )}
+        </AnimatePresence>
 
         {/* ✅ Show Skeletons while loading */}
         {loading ? (

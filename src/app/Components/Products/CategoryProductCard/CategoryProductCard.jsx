@@ -79,7 +79,7 @@ export default function CategoryProductCard({ product }) {
         </div>
 
         {/* Compare & Wishlist */}
-        <div className="flex justify-between gap-4 text-gray-600 text-sm opacity-0 group-hover:opacity-100 transition">
+        <div className="hidden lg:flex justify-between gap-4 text-gray-600 text-sm opacity-0 group-hover:opacity-100 transition">
           <button className="flex items-center gap-1 hover:underline">
             <FiRepeat /> Compare
           </button>

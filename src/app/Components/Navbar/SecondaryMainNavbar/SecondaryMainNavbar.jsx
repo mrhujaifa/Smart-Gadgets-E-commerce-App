@@ -6,6 +6,7 @@ import Link from "next/link";
 import { FaBars, FaTimes, FaSearch } from "react-icons/fa";
 import { IoIosSearch } from "react-icons/io";
 import SeconderyCategoryNavbar from "../SecondaryCategoryNavbar/SeconderyCategoryNavbar";
+import Image from "next/image";
 
 export default function SecondaryMainNavbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,15 +33,27 @@ export default function SecondaryMainNavbar() {
       <div className="bg-yellow-300">
         {/*  Main Navbar */}
         <div className="container mx-auto w-full relative z-50 ">
-          <div className="py-6 lg:py-1 flex items-center mx-4 lg:mx-0 justify-between ">
+          <div className="py-4 lg:py-1 flex items-center mx-4 lg:mx-0 justify-between ">
             {/* Left - Logo + Mobile Menu */}
             <div className="flex items-center gap-4">
               <button
                 onClick={() => setIsOpen(true)}
                 className="lg:hidden text-3xl"
               >
-                <FaBars />
+                <FaBars size={22} />
               </button>
+
+              <Link
+                href="/"
+                className=" lg:hidden flex items-center mx-2 h-1 pt-1 mt-1.5 lg:mt-0 lg:mx-0 text-xl font-bold"
+              >
+                <Image
+                  src="/logos/smart-gadgets.png"  
+                  height={170}
+                  width={185}
+                  alt="smart gadgets"
+                ></Image>
+              </Link>
               <SeconderyCategoryNavbar />
             </div>
 
@@ -107,7 +120,7 @@ export default function SecondaryMainNavbar() {
 
               {/* Mobile Search Icon */}
               <button onClick={toggleSearch} className="lg:hidden">
-                <IoIosSearch size={30} />
+                <IoIosSearch size={25} />
               </button>
 
               {/* Wishlist */}
@@ -139,7 +152,7 @@ export default function SecondaryMainNavbar() {
                   viewBox="0 0 24 24"
                   strokeWidth="1.5"
                   stroke="currentColor"
-                  className="w-7 h-7 lg:w-6 lg:h-6"
+                  className="w-6 h-6 lg:w-6 lg:h-6"
                 >
                   <path
                     strokeLinecap="round"

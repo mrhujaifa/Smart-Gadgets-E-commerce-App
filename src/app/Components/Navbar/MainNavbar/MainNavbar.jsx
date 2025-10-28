@@ -34,8 +34,8 @@ export default function Header() {
   return (
     <>
       {/* Navbar */}
-      <div className="container mx-auto w-full">
-        <div className="py-6 lg:py-6 flex items-center mx-4 lg:mx-0 justify-between">
+      <div className="container mx-auto w-full bg-yellow-300 lg:bg-white">
+        <div className="py-4 lg:py-6 flex items-center  mx-4 lg:mx-0 justify-between">
           {/* Left - Logo + Menu Icon */}
           <div className="flex items-center gap-4">
             {/* Mobile Menu Icon */}
@@ -43,18 +43,19 @@ export default function Header() {
               onClick={() => setIsOpen(true)}
               className="lg:hidden text-3xl"
             >
-              <FaBars />
+              <FaBars size={22} />
             </button>
             {/* Logo */}
             <Link
               href="/"
-              className="flex items-center mx-2 h-1 lg:mx-0 text-xl font-bold"
+              className="flex items-center mx-2 mt-2 lg:mt-0 h-1 lg:mx-2 text-xl font-bold"
             >
               <Image
                 src="/logos/smart-gadgets.png"
-                height={120}
-                width={120}
+                height={100}
+                width={100}
                 alt="smart gadgets"
+                className="w-19 lg:w-27"
               ></Image>
             </Link>
           </div>
@@ -116,11 +117,11 @@ export default function Header() {
           </div>
 
           {/* Right - Icons */}
-          <div className="flex items-center gap-4 lg:gap-7 text-gray-700">
+          <div className="flex items-center gap-3 lg:gap-7 text-gray-700">
             {/* sign icone */}
             <Link href="/login" className="font-medium">
               <div className="flex items-center gap-2">
-                <AiOutlineUser className="w-7 h-7 lg:w-6 lg:h-6" />
+                <AiOutlineUser className="w-6 h-6 lg:w-6 lg:h-6" />
                 <span className="pt-0.5 hidden lg:block">Sign In</span>
               </div>
             </Link>
@@ -144,7 +145,7 @@ export default function Header() {
 
             {/* search icone */}
             <button onClick={toggleSearch} className="lg:hidden">
-              <IoIosSearch size={30} />
+              <IoIosSearch size={25} />
             </button>
 
             {/* wishlist icone */}
@@ -172,20 +173,20 @@ export default function Header() {
                 viewBox="0 0 24 24"
                 strokeWidth="1.5"
                 stroke="currentColor"
-                className="w-7 h-7 lg:w-6 lg:h-6"
+                className="w-6 h-6 lg:w-6 lg:h-6"
               >
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 
-         1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 
-         1.125 0 0 1-1.12-1.243l1.264-12A1.125 
-         1.125 0 0 1 5.513 7.5h12.974c.576 
-         0 1.059.435 1.119 1.007ZM8.625 
-         10.5a.375.375 0 1 1-.75 0 
-         .375.375 0 0 1 .75 0Zm7.5 
-         0a.375.375 0 1 1-.75 0 
-         .375.375 0 0 1 .75 0Z"
+                     1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 
+                     1.125 0 0 1-1.12-1.243l1.264-12A1.125 
+                     1.125 0 0 1 5.513 7.5h12.974c.576 
+                     0 1.059.435 1.119 1.007ZM8.625 
+                     10.5a.375.375 0 1 1-.75 0 
+                     .375.375 0 0 1 .75 0Zm7.5 
+                     0a.375.375 0 1 1-.75 0 
+                     .375.375 0 0 1 .75 0Z"
                 />
               </svg>
 

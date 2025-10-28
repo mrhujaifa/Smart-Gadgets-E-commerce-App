@@ -7,9 +7,9 @@ import FiltersSidebar from "./Components/FilterSidebar/FilterSidebar";
 
 export default function ShopLayout() {
   return (
-    <div className="container mx-auto">
+    <div>
       {/* ---------- Breadcrumb Section ---------- */}
-      <nav className="flex items-center flex-wrap gap-2 text-sm mt-4 mb-6 text-gray-600">
+      <nav className="flex items-center flex-wrap gap-2 text-sm px-4 py-4 bg-gray-100 text-gray-600">
         {/* Home */}
         <Link
           href="/"
@@ -30,8 +30,13 @@ export default function ShopLayout() {
           Shop
         </Link>
       </nav>
-
-      <CategoriesSidebar></CategoriesSidebar>
+      <div className="container mx-auto">
+        <header className="flex items-center justify-between text-2xl mx-4 py-5">
+          <span>Shop</span>
+          <span className="text-sm">Showing 1–25 of 56 results</span>
+        </header>
+        <CategoriesSidebar></CategoriesSidebar>
+      </div>
     </div>
   );
 

@@ -28,8 +28,8 @@
 }
 
 :global(.swiper-pagination-bullet) {
-  width: 11px;
-  height: 11px;
+  width: 10px;
+  height: 10px;
   background-color: #9ca3af;
   border-radius: 9999px;
   opacity: 0.7;
@@ -37,8 +37,8 @@
 }
 
 :global(.swiper-pagination-bullet-active) {
-  width: 40px;
-  height: 10px;
+  width: 30px;
+  height: 9px;
   background-color: #facc15;
   border-radius: 9999px;
   opacity: 1;
@@ -46,7 +46,6 @@
 
 /* Small devices (430px - 767px) */
 @media (max-width: 767px) {
-  
 }
 
 /* Extra small devices (0px - 429px) */

@@ -51,7 +51,7 @@ const slides = [
 export default function HeroBanner() {
   return (
     <div
-      className={`w-full ${poppins.className} h-[420px] bg-cover flex items-center justify-center text-white`}
+      className={`w-full ${poppins.className} pt-10 pb-1 lg:pb-0 lg:pt-0  bg-cover flex items-center justify-center text-white`}
       style={{ backgroundImage: "url('/images/hero-bg.jpg')" }}
     >
       <div className="w-full">
@@ -64,22 +64,22 @@ export default function HeroBanner() {
         >
           {slides.map((slide) => (
             <SwiperSlide key={slide.id}>
-              <div className="flex items-center justify-around mx-5 h-98 lg:h-100 lg:mx-40 gap-3 lg:pl-40">
+              <div className="flex items-center justify-around mx-4 h-auto lg:h-100 lg:mx-40 gap-3 lg:pl-40">
                 {/* Left Content */}
                 <div>
-                  <h1 className="text-[#2f3a47] font-extralight lg:w-[400px] text-[40px] lg:text-[60px] leading-[1] tracking-tight">
+                  <h1 className="text-[#2f3a47] font-extralight lg:w-[400px] text-[28px] lg:text-[60px] leading-[1] tracking-tight">
                     <span className="inline tracking-wide">THE NEW </span>
-                    <span className="inline text-[38px] lg:text-[54px]">STANDARD</span>
+                    <span className="inline text-[24px] lg:text-[54px]">STANDARD</span>
                   </h1>
-                  <h2 className="text-black text-[15px] my-3">{slide.title}</h2>
+                  <h2 className="text-[#2f3a47] text-[15px] font-semibold my-3">{slide.title}</h2>
                   <p className="text-[13px] lg:text-sm text-gray-800">FROM</p>
-                  <div className="flex text-black">
+                  <div className="flex text-[#2f3a47]">
                     <p className="font-semibold lg:text-3xl">$</p>
-                    <p className="text-4xl lg:text-6xl font-semibold">
+                    <p className="text-[37px] lg:text-6xl font-medium">
                       {slide.price}
                     </p>
                   </div>
-                  <button className="px-4 py-2 lg:px-16 lg:py-2.5 mt-4 bg-yellow-300 text-black rounded-lg hover:bg-yellow-500 transition">
+                  <button className="px-4 py-2 mb-10 lg:mb-0 lg:px-16 lg:py-2.5 mt-4 bg-yellow-300 text-[#2f3a47] rounded-lg hover:bg-yellow-500 transition">
                     {slide.btnText}
                   </button>
                 </div>
